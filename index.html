@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5efef">
+  <meta name="description" content="Catálogo de ofertas MASTV">
+  <title>MASTV | Catálogo de ofertas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="#inicio" data-go="home" aria-label="MASTV, ir al inicio"><img src="img/mastv.svg" alt="MASTV" width="76" height="44"></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="siteMenu"><span></span><span></span><span></span></button>
+      <nav class="site-menu" id="siteMenu" hidden aria-label="Navegación principal"><button type="button" data-go="home">Inicio</button><button type="button" data-go="catalog">Catálogo de ofertas</button></nav>
+    </header>
+
+    <main id="mainContent">
+      <section class="view home-view" id="homeView" aria-labelledby="homeTitle">
+        <div class="hero-home"><h1 id="homeTitle">Descubre tus beneficios</h1><p>Aprovecha descuentos, promociones y experiencias exclusivas para ti.</p><button class="primary-button" type="button" data-go="catalog">Explorar ofertas</button></div>
+        <h2 class="section-title">Beneficios destacados</h2>
+        <div class="featured-grid">
+          <article class="featured-card"><div class="featured-icon">🚗</div><h3>20%</h3><p>Descuento en tus viajes</p><button type="button" data-go="catalog">Ver beneficio</button></article>
+          <article class="featured-card featured-card--blue"><div class="featured-icon">🍕</div><h3>2x1</h3><p>Pizzas medianas</p><button type="button" data-go="catalog">Ver beneficio</button></article>
+          <article class="featured-card"><div class="featured-icon">🎟️</div><h3>50%</h3><p>Descuento en boletos</p><button type="button" data-offer="cinemex">Ver beneficio</button></article>
+        </div>
+        <h2 class="section-title">Todos los beneficios</h2><p class="section-description">Encuentra una promoción perfecta para ti.</p>
+        <button class="outline-button" data-go="catalog" type="button">Ver todas las ofertas</button>
+      </section>
+
+      <section class="view catalog-view" id="catalogView" aria-labelledby="catalogTitle" hidden>
+        <div class="catalog-banner"><div class="catalog-banner__text"><h1 id="catalogTitle">Catálogo de<br>Ofertas</h1><p>Aprovecha las promociones exclusivas para ti</p></div><img class="gift-art" src="img/regalo.svg" alt="Regalo con moño rojo"></div>
+        <div class="filter-block"><h2>Filtrar por categoría:</h2><div class="filters" id="categoryFilters" role="group" aria-label="Filtrar ofertas"><button class="filter is-active" type="button" data-filter="Todos" aria-pressed="true">Todos</button><button class="filter" type="button" data-filter="Comida" aria-pressed="false">Comida</button><button class="filter" type="button" data-filter="Cine" aria-pressed="false">Cine</button><button class="filter" type="button" data-filter="Ropa" aria-pressed="false">Ropa</button></div></div>
+        <div class="offer-list" id="offerList"></div>
+        <p class="empty-state" id="emptyState" hidden>No hay promociones en esta categoría por ahora.</p>
+      </section>
+
+      <section class="view detail-view" id="detailView" aria-labelledby="detailTitle" hidden>
+        <div class="detail-card"><button class="back-pill" id="backToCatalog" type="button">← Volver al Catálogo de ofertas</button><h1 id="detailTitle">Cinemex</h1><h2 id="detailSubtitle">50% de descuento en boletos 2D</h2><hr class="detail-rule"><div class="description-block"><h3>Descripción de la Promoción</h3><p id="detailDescription"></p></div>
+          <div class="promo-code-panel"><h3>Código de la promoción</h3><div class="promo-code-field"><strong id="promoCode">CINEMEX1230</strong><button type="button" id="copyCode" aria-label="Copiar código de promoción" title="Copiar código"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="3" width="12" height="15" rx="2"></rect><path d="M16 18v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3"></path></svg></button></div><span class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></span></div>
+          <hr class="detail-rule"><div class="discount-area"><h3>Descuento</h3><p id="detailDiscount">-50% desc</p></div><button class="primary-button redeem-button" id="redeemButton" type="button">Canjear Promoción <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"></path></svg></button></div>
+      </section>
+    </main>
+
+    <footer class="bottom-bar" id="bottomBar"><span id="bottomBarLabel">Todos</span></footer>
+  </div>
+
+  <div class="modal-backdrop" id="locationModal" role="presentation" hidden>
+    <section class="dialog location-dialog" role="dialog" aria-modal="true" aria-labelledby="locationTitle" aria-describedby="locationDescription" tabindex="-1">
+      <button class="close-dialog" id="closeLocation" type="button" aria-label="Cerrar">×</button>
+      <svg class="pin-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-8.1 8-14A8 8 0 1 0 4 8c0 5.9 8 14 8 14Z" fill="currentColor"></path><circle cx="12" cy="8" r="2.7" fill="white"></circle></svg>
+      <h2 id="locationTitle">MASTV quiere utilizar la ubicación de tu dispositivo</h2><p id="locationDescription">Necesitamos tu ubicación para ofrecerte contenido y recomendaciones personalizadas y disponibles en tu área</p>
+      <button type="button" class="primary-button location-allow" id="allowLocation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-8.1 8-14A8 8 0 1 0 4 8c0 5.9 8 14 8 14Z" fill="currentColor"></path><circle cx="12" cy="8" r="2.7" fill="white"></circle></svg>Permitir ubicación</button>
+      <button type="button" class="outline-button location-decline" id="declineLocation"><span aria-hidden="true">×</span> Rechazar</button>
+      <p class="location-status" id="locationStatus" role="status" aria-live="polite"></p>
+    </section>
+  </div>
+
+  <div class="modal-backdrop confirm-backdrop" id="confirmModal" role="presentation" hidden><section class="dialog confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" tabindex="-1"><button type="button" class="close-dialog" id="closeConfirm" aria-label="Cerrar">×</button><h2 id="confirmTitle">Confirmar Canje<br>de promoción</h2><div class="confirm-summary"><h3 id="confirmOfferName">Cinemex</h3><p id="confirmOfferDescription">50% de descuento en boletos 2D</p></div><button type="button" class="primary-button" id="confirmRedeem">Confirmar canje</button><button type="button" class="outline-button" id="cancelRedeem"><span aria-hidden="true">×</span> Cancelar</button></section></div>
+
+  <div class="modal-backdrop" id="successModal" role="presentation" hidden><section class="dialog success-dialog" role="dialog" aria-modal="true" aria-labelledby="successTitle" tabindex="-1"><div class="success-mark" aria-hidden="true">✓</div><h2 id="successTitle">¡Canje confirmado!</h2><p>Tu promoción se ha registrado correctamente.</p><button type="button" class="primary-button" id="successDone">Volver al catálogo</button></section></div>
+</body>
+</html>
