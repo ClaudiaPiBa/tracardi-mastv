@@ -1,0 +1,1078 @@
+{
+  "scope": "13 casos de regresión por cambios US004",
+  "date": "2026-11-06T04:10:11.514Z",
+  "runs": [
+    {
+      "story": "US-001",
+      "command": "node /tmp/tracardi-qa/final-us001.mjs",
+      "cwd": "/home/swumplurd/Documentos/devsarrollo/repos/tracardi-mastv",
+      "exitCode": 0,
+      "results": [
+        {
+          "id": "01",
+          "name": "Reconocer una carga de catálogo en curso",
+          "status": "PASS",
+          "started": "2026-11-06T04:09:53.349Z",
+          "observed": {
+            "loadingStatus": "Cargando ofertas…",
+            "emptyStateDuringWait": false
+          },
+          "requests": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+              "method": "GET",
+              "body": null
+            },
+            {
+              "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+              "method": "GET",
+              "body": null
+            }
+          ],
+          "uncaughtErrors": [],
+          "consoleErrors": [],
+          "screenshot": "01.png"
+        },
+        {
+          "id": "02",
+          "name": "Abrir un detalle coherente con la tarjeta",
+          "status": "PASS",
+          "started": "2026-11-06T04:09:54.337Z",
+          "observed": {
+            "selected": "QA-DETALLE-2",
+            "conditions": "published synthetic economics/currency/expiry/type",
+            "confirmationMatches": true,
+            "keyboard": "Tab / Shift+Tab / Escape / focus restoration"
+          },
+          "requests": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+              "method": "GET",
+              "body": null
+            },
+            {
+              "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+              "method": "GET",
+              "body": null
+            },
+            {
+              "url": "http://localhost:8686/track",
+              "method": "OPTIONS",
+              "body": null
+            },
+            {
+              "url": "http://localhost:8686/track",
+              "method": "OPTIONS",
+              "body": null
+            }
+          ],
+          "uncaughtErrors": [],
+          "consoleErrors": [],
+          "screenshot": "02.png"
+        },
+        {
+          "id": "03",
+          "name": "Copiar el cupón publicado",
+          "status": "PASS",
+          "started": "2026-11-06T04:09:55.381Z",
+          "observed": {
+            "clipboard": "QA-CUPON-CATALOGO",
+            "feedback": "¡Código copiado!"
+          },
+          "requests": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+              "method": "GET",
+              "body": null
+            },
+            {
+              "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+              "method": "GET",
+              "body": null
+            },
+            {
+              "url": "http://localhost:8686/track",
+              "method": "OPTIONS",
+              "body": null
+            },
+            {
+              "url": "http://localhost:8686/track",
+              "method": "OPTIONS",
+              "body": null
+            }
+          ],
+          "uncaughtErrors": [],
+          "consoleErrors": [],
+          "screenshot": "03.png"
+        },
+        {
+          "id": "04",
+          "name": "Recuperar una carga fallida",
+          "status": "PASS",
+          "started": "2026-11-06T04:09:56.568Z",
+          "observed": {
+            "failedPage": 2,
+            "partialCards": 0,
+            "retryVisible": true
+          },
+          "requests": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+              "method": "GET",
+              "body": null
+            },
+            {
+              "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+              "method": "GET",
+              "body": null
+            },
+            {
+              "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=2",
+              "method": "GET",
+              "body": null
+            }
+          ],
+          "uncaughtErrors": [],
+          "consoleErrors": [],
+          "screenshot": "04.png"
+        },
+        {
+          "id": "05",
+          "name": "Volver a intentar la carga",
+          "status": "PASS",
+          "started": "2026-11-06T04:09:57.563Z",
+          "observed": {
+            "attempts": 2,
+            "recoveredCards": 1
+          },
+          "requests": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+              "method": "GET",
+              "body": null
+            },
+            {
+              "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+              "method": "GET",
+              "body": null
+            },
+            {
+              "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+              "method": "GET",
+              "body": null
+            },
+            {
+              "url": "http://localhost:8686/track",
+              "method": "OPTIONS",
+              "body": null
+            }
+          ],
+          "uncaughtErrors": [],
+          "consoleErrors": [],
+          "screenshot": "05.png"
+        },
+        {
+          "id": "06",
+          "name": "Acceder al catálogo desde Inicio",
+          "status": "PASS",
+          "started": "2026-11-06T04:09:58.550Z",
+          "observed": {
+            "featuredAccesses": 3,
+            "fixedOfferDetailOpened": false
+          },
+          "requests": [
+            {
+              "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+              "method": "GET",
+              "body": null
+            },
+            {
+              "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+              "method": "GET",
+              "body": null
+            },
+            {
+              "url": "http://localhost:8686/track",
+              "method": "OPTIONS",
+              "body": null
+            },
+            {
+              "url": "http://localhost:8686/track",
+              "method": "OPTIONS",
+              "body": null
+            },
+            {
+              "url": "http://localhost:8686/track",
+              "method": "OPTIONS",
+              "body": null
+            }
+          ],
+          "uncaughtErrors": [],
+          "consoleErrors": [],
+          "screenshot": "06.png"
+        }
+      ]
+    },
+    {
+      "story": "US-002",
+      "command": "node /tmp/tracardi-qa/final-us002.mjs",
+      "cwd": "/home/swumplurd/Documentos/devsarrollo/repos/tracardi-mastv",
+      "exitCode": 0,
+      "results": [
+        {
+          "id": "01",
+          "name": "Vincular interacciones con perfil y serializar primera respuesta",
+          "status": "PASS",
+          "observed": {
+            "initialPendingRequests": 1,
+            "nextProfileMatches": true
+          },
+          "calls": [
+            {
+              "body": {
+                "source": {
+                  "id": "demo-source"
+                },
+                "session": {
+                  "id": "10a7b5bc-8523-4807-a236-34e4fc70f8ce"
+                },
+                "profile": null,
+                "events": [
+                  {
+                    "type": "comida-seg",
+                    "properties": {
+                      "category": "Comida",
+                      "filter_time": "2026-11-06T04:10:00.596Z",
+                      "action": "category_filter"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "body": {
+                "source": {
+                  "id": "demo-source"
+                },
+                "session": {
+                  "id": "10a7b5bc-8523-4807-a236-34e4fc70f8ce"
+                },
+                "profile": {
+                  "id": "00000000-0000-4000-8000-000000000002"
+                },
+                "events": [
+                  {
+                    "type": "offer-click",
+                    "properties": {
+                      "id": "QA-1",
+                      "offer_id": "QA-1",
+                      "title": "QA beneficio 1",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-1",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "action": "offer_click"
+                    }
+                  },
+                  {
+                    "type": "offer-view",
+                    "properties": {
+                      "id": "QA-1",
+                      "offer_id": "QA-1",
+                      "title": "QA beneficio 1",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-1",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "action": "offer_click"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "uncaughtErrors": []
+        },
+        {
+          "id": "02",
+          "name": "Confirmar registro de canje",
+          "status": "PASS",
+          "observed": {
+            "redeems": 1,
+            "successOnlyAfterAcceptance": true,
+            "mobileDialogBounded": true
+          },
+          "calls": [
+            {
+              "body": {
+                "source": {
+                  "id": "demo-source"
+                },
+                "session": {
+                  "id": "c6feea8e-d30c-4c1d-a82a-048bebc41c6d"
+                },
+                "profile": null,
+                "events": [
+                  {
+                    "type": "comida-seg",
+                    "properties": {
+                      "category": "Comida",
+                      "filter_time": "2026-11-06T04:10:01.779Z",
+                      "action": "category_filter"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "body": {
+                "source": {
+                  "id": "demo-source"
+                },
+                "session": {
+                  "id": "c6feea8e-d30c-4c1d-a82a-048bebc41c6d"
+                },
+                "profile": {
+                  "id": "00000000-0000-4000-8000-000000000002"
+                },
+                "events": [
+                  {
+                    "type": "offer-click",
+                    "properties": {
+                      "id": "QA-1",
+                      "offer_id": "QA-1",
+                      "title": "QA beneficio 1",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-1",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "action": "offer_click"
+                    }
+                  },
+                  {
+                    "type": "offer-view",
+                    "properties": {
+                      "id": "QA-1",
+                      "offer_id": "QA-1",
+                      "title": "QA beneficio 1",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-1",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "action": "offer_click"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "body": {
+                "source": {
+                  "id": "demo-source"
+                },
+                "session": {
+                  "id": "c6feea8e-d30c-4c1d-a82a-048bebc41c6d"
+                },
+                "profile": {
+                  "id": "00000000-0000-4000-8000-000000000002"
+                },
+                "events": [
+                  {
+                    "type": "offer-redeem",
+                    "properties": {
+                      "id": "QA-1",
+                      "offer_id": "QA-1",
+                      "title": "QA beneficio 1",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-1",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "coupon": "QA-CUPON-1",
+                      "action": "offer_redeem",
+                      "redeemed_at": "2026-11-06T04:10:01.922Z"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "uncaughtErrors": []
+        },
+        {
+          "id": "03",
+          "name": "Evitar duplicados pendientes y no interrumpir con respuesta tardía",
+          "status": "PASS",
+          "observed": {
+            "redeems": 1,
+            "newDetailUnaffectedByLateAcceptance": true,
+            "stalePendingMessageCleared": true,
+            "secondOfferCanConfirm": true
+          },
+          "calls": [
+            {
+              "body": {
+                "source": {
+                  "id": "demo-source"
+                },
+                "session": {
+                  "id": "368c1bba-4871-4595-aaa8-54aa89b34ce1"
+                },
+                "profile": null,
+                "events": [
+                  {
+                    "type": "comida-seg",
+                    "properties": {
+                      "category": "Comida",
+                      "filter_time": "2026-11-06T04:10:02.873Z",
+                      "action": "category_filter"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "body": {
+                "source": {
+                  "id": "demo-source"
+                },
+                "session": {
+                  "id": "368c1bba-4871-4595-aaa8-54aa89b34ce1"
+                },
+                "profile": {
+                  "id": "00000000-0000-4000-8000-000000000002"
+                },
+                "events": [
+                  {
+                    "type": "offer-click",
+                    "properties": {
+                      "id": "QA-1",
+                      "offer_id": "QA-1",
+                      "title": "QA beneficio 1",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-1",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "action": "offer_click"
+                    }
+                  },
+                  {
+                    "type": "offer-view",
+                    "properties": {
+                      "id": "QA-1",
+                      "offer_id": "QA-1",
+                      "title": "QA beneficio 1",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-1",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "action": "offer_click"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "body": {
+                "source": {
+                  "id": "demo-source"
+                },
+                "session": {
+                  "id": "368c1bba-4871-4595-aaa8-54aa89b34ce1"
+                },
+                "profile": {
+                  "id": "00000000-0000-4000-8000-000000000002"
+                },
+                "events": [
+                  {
+                    "type": "offer-redeem",
+                    "properties": {
+                      "id": "QA-1",
+                      "offer_id": "QA-1",
+                      "title": "QA beneficio 1",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-1",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "coupon": "QA-CUPON-1",
+                      "action": "offer_redeem",
+                      "redeemed_at": "2026-11-06T04:10:03.000Z"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "body": {
+                "source": {
+                  "id": "demo-source"
+                },
+                "session": {
+                  "id": "368c1bba-4871-4595-aaa8-54aa89b34ce1"
+                },
+                "profile": {
+                  "id": "00000000-0000-4000-8000-000000000002"
+                },
+                "events": [
+                  {
+                    "type": "offer-click",
+                    "properties": {
+                      "id": "QA-SEGUNDA",
+                      "offer_id": "QA-SEGUNDA",
+                      "title": "QA beneficio SEGUNDA",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-SEGUNDA",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "action": "offer_click"
+                    }
+                  },
+                  {
+                    "type": "offer-view",
+                    "properties": {
+                      "id": "QA-SEGUNDA",
+                      "offer_id": "QA-SEGUNDA",
+                      "title": "QA beneficio SEGUNDA",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-SEGUNDA",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "action": "offer_click"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "uncaughtErrors": []
+        },
+        {
+          "id": "04",
+          "name": "Informar canje no confirmado: rechazo del registro",
+          "status": "PASS",
+          "observed": {
+            "result": "rechazo del registro",
+            "registeredMessageShown": false,
+            "identityUnchanged": true,
+            "invalidJSONAlsoCovered": false
+          },
+          "calls": [
+            {
+              "body": {
+                "source": {
+                  "id": "demo-source"
+                },
+                "session": {
+                  "id": "900e6cba-9f80-4862-a871-3ea6fb544ed2"
+                },
+                "profile": null,
+                "events": [
+                  {
+                    "type": "comida-seg",
+                    "properties": {
+                      "category": "Comida",
+                      "filter_time": "2026-11-06T04:10:04.349Z",
+                      "action": "category_filter"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "body": {
+                "source": {
+                  "id": "demo-source"
+                },
+                "session": {
+                  "id": "900e6cba-9f80-4862-a871-3ea6fb544ed2"
+                },
+                "profile": {
+                  "id": "00000000-0000-4000-8000-000000000002"
+                },
+                "events": [
+                  {
+                    "type": "offer-click",
+                    "properties": {
+                      "id": "QA-1",
+                      "offer_id": "QA-1",
+                      "title": "QA beneficio 1",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-1",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "action": "offer_click"
+                    }
+                  },
+                  {
+                    "type": "offer-view",
+                    "properties": {
+                      "id": "QA-1",
+                      "offer_id": "QA-1",
+                      "title": "QA beneficio 1",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-1",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "action": "offer_click"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "body": {
+                "source": {
+                  "id": "demo-source"
+                },
+                "session": {
+                  "id": "900e6cba-9f80-4862-a871-3ea6fb544ed2"
+                },
+                "profile": {
+                  "id": "00000000-0000-4000-8000-000000000002"
+                },
+                "events": [
+                  {
+                    "type": "offer-redeem",
+                    "properties": {
+                      "id": "QA-1",
+                      "offer_id": "QA-1",
+                      "title": "QA beneficio 1",
+                      "category": "Comida",
+                      "store": "QA comercio sintético",
+                      "entidad_federativa": null,
+                      "price_original": 200,
+                      "price": 170,
+                      "price_offer": 170,
+                      "discount_percentage": 15,
+                      "coupon_code": "QA-CUPON-1",
+                      "expiration_date": "2030-12-31",
+                      "offer_type": "descuento",
+                      "coupon": "QA-CUPON-1",
+                      "action": "offer_redeem",
+                      "redeemed_at": "2026-11-06T04:10:04.473Z"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "uncaughtErrors": []
+        }
+      ]
+    },
+    {
+      "story": "US-003",
+      "command": "node /tmp/tracardi-qa/final-us003.mjs",
+      "cwd": "/home/swumplurd/Documentos/devsarrollo/repos/tracardi-mastv",
+      "exitCode": 0,
+      "results": [
+        {
+          "id": "01",
+          "name": "Aplicar nuevos intereses recibidos",
+          "status": "PASS",
+          "observed": {
+            "fullMapReplacement": true,
+            "noReload": true,
+            "detailAndDialogStayOpen": true,
+            "noRenderEvents": true,
+            "newProfileInvalidatesOldUnlessSameResponseMap": true
+          },
+          "calls": [
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "00000000-0000-4000-8000-000000000030"
+              },
+              "profile": {
+                "id": "00000000-0000-4000-8000-000000000003"
+              },
+              "events": [
+                {
+                  "type": "category-filter",
+                  "properties": {
+                    "category": "Todos",
+                    "filter_time": "2026-11-06T04:10:05.520Z"
+                  }
+                }
+              ]
+            },
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "00000000-0000-4000-8000-000000000030"
+              },
+              "profile": {
+                "id": "00000000-0000-4000-8000-000000000003"
+              },
+              "events": [
+                {
+                  "type": "offer-click",
+                  "properties": {
+                    "id": "QA-COMIDA-1",
+                    "offer_id": "QA-COMIDA-1",
+                    "title": "QA beneficio COMIDA-1",
+                    "category": "Comida",
+                    "store": "QA comercio sintético",
+                    "entidad_federativa": null,
+                    "price_original": 200,
+                    "price": 170,
+                    "price_offer": 170,
+                    "discount_percentage": 15,
+                    "coupon_code": "QA-CUPON-COMIDA-1",
+                    "expiration_date": "2030-12-31",
+                    "offer_type": "descuento",
+                    "action": "offer_click"
+                  }
+                },
+                {
+                  "type": "offer-view",
+                  "properties": {
+                    "id": "QA-COMIDA-1",
+                    "offer_id": "QA-COMIDA-1",
+                    "title": "QA beneficio COMIDA-1",
+                    "category": "Comida",
+                    "store": "QA comercio sintético",
+                    "entidad_federativa": null,
+                    "price_original": 200,
+                    "price": 170,
+                    "price_offer": 170,
+                    "discount_percentage": 15,
+                    "coupon_code": "QA-CUPON-COMIDA-1",
+                    "expiration_date": "2030-12-31",
+                    "offer_type": "descuento",
+                    "action": "offer_click"
+                  }
+                }
+              ]
+            },
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "00000000-0000-4000-8000-000000000030"
+              },
+              "profile": {
+                "id": "00000000-0000-4000-8000-000000000003"
+              },
+              "events": [
+                {
+                  "type": "category-filter",
+                  "properties": {
+                    "category": "Todos",
+                    "filter_time": "2026-11-06T04:10:05.865Z"
+                  }
+                }
+              ]
+            },
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "00000000-0000-4000-8000-000000000030"
+              },
+              "profile": {
+                "id": "00000000-0000-4000-8000-000000000004"
+              },
+              "events": [
+                {
+                  "type": "category-filter",
+                  "properties": {
+                    "category": "Todos",
+                    "filter_time": "2026-11-06T04:10:06.011Z"
+                  }
+                }
+              ]
+            },
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "00000000-0000-4000-8000-000000000030"
+              },
+              "profile": {
+                "id": "00000000-0000-4000-8000-000000000004"
+              },
+              "events": [
+                {
+                  "type": "category-filter",
+                  "properties": {
+                    "category": "Todos",
+                    "filter_time": "2026-11-06T04:10:06.159Z"
+                  }
+                }
+              ]
+            }
+          ],
+          "uncaughtErrors": []
+        },
+        {
+          "id": "02",
+          "name": "Recuperar recomendaciones al volver",
+          "status": "PASS",
+          "observed": {
+            "restoredKnownProfileMap": true,
+            "reloadDoesNotTrack": true
+          },
+          "calls": [
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "00000000-0000-4000-8000-000000000030"
+              },
+              "profile": {
+                "id": "00000000-0000-4000-8000-000000000003"
+              },
+              "events": [
+                {
+                  "type": "category-filter",
+                  "properties": {
+                    "category": "Todos",
+                    "filter_time": "2026-11-06T04:10:07.630Z"
+                  }
+                }
+              ]
+            }
+          ],
+          "uncaughtErrors": []
+        },
+        {
+          "id": "03",
+          "name": "Ignorar preferencias guardadas no interpretables",
+          "status": "PASS",
+          "observed": {
+            "corruptAndMalformedSavedMapsIgnored": true,
+            "otherProfileMapIgnored": true,
+            "explicitExplorationAvailable": true,
+            "storageDeniedKeepsAcceptedMapInMemory": true
+          },
+          "calls": [
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "00000000-0000-4000-8000-000000000030"
+              },
+              "profile": {
+                "id": "00000000-0000-4000-8000-000000000003"
+              },
+              "events": [
+                {
+                  "type": "cine-seg",
+                  "properties": {
+                    "category": "Cine",
+                    "filter_time": "2026-11-06T04:10:09.050Z",
+                    "action": "category_filter"
+                  }
+                }
+              ]
+            },
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "00000000-0000-4000-8000-000000000030"
+              },
+              "profile": {
+                "id": "00000000-0000-4000-8000-000000000003"
+              },
+              "events": [
+                {
+                  "type": "cine-seg",
+                  "properties": {
+                    "category": "Cine",
+                    "filter_time": "2026-11-06T04:10:09.476Z",
+                    "action": "category_filter"
+                  }
+                }
+              ]
+            },
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "00000000-0000-4000-8000-000000000030"
+              },
+              "profile": {
+                "id": "00000000-0000-4000-8000-000000000003"
+              },
+              "events": [
+                {
+                  "type": "cine-seg",
+                  "properties": {
+                    "category": "Cine",
+                    "filter_time": "2026-11-06T04:10:09.887Z",
+                    "action": "category_filter"
+                  }
+                }
+              ]
+            },
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "00000000-0000-4000-8000-000000000030"
+              },
+              "profile": {
+                "id": "00000000-0000-4000-8000-000000000003"
+              },
+              "events": [
+                {
+                  "type": "cine-seg",
+                  "properties": {
+                    "category": "Cine",
+                    "filter_time": "2026-11-06T04:10:10.308Z",
+                    "action": "category_filter"
+                  }
+                }
+              ]
+            },
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "00000000-0000-4000-8000-000000000030"
+              },
+              "profile": {
+                "id": "00000000-0000-4000-8000-000000000003"
+              },
+              "events": [
+                {
+                  "type": "cine-seg",
+                  "properties": {
+                    "category": "Cine",
+                    "filter_time": "2026-11-06T04:10:10.708Z",
+                    "action": "category_filter"
+                  }
+                }
+              ]
+            },
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "e155a0fe-c626-49c7-b97c-485d53f32c52"
+              },
+              "profile": null,
+              "events": [
+                {
+                  "type": "category-filter",
+                  "properties": {
+                    "category": "Todos",
+                    "filter_time": "2026-11-06T04:10:11.118Z"
+                  }
+                }
+              ]
+            },
+            {
+              "source": {
+                "id": "demo-source"
+              },
+              "session": {
+                "id": "e155a0fe-c626-49c7-b97c-485d53f32c52"
+              },
+              "profile": {
+                "id": "00000000-0000-4000-8000-000000000003"
+              },
+              "events": [
+                {
+                  "type": "category-filter",
+                  "properties": {
+                    "category": "Todos",
+                    "filter_time": "2026-11-06T04:10:11.262Z"
+                  }
+                }
+              ]
+            }
+          ],
+          "uncaughtErrors": []
+        }
+      ]
+    }
+  ]
+}

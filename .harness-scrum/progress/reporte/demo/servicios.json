@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-11-06T04:32:15+00:00",
+  "checks": [
+    {
+      "service": "preview",
+      "http": 200,
+      "allow_origin": null,
+      "mastv_title_present": true
+    },
+    {
+      "service": "strapi",
+      "http": 200,
+      "allow_origin": "http://127.0.0.1:8080",
+      "keys": [
+        "data",
+        "meta"
+      ],
+      "total": 7,
+      "row_schema": [
+        "categoria",
+        "codigo_cupon",
+        "createdAt",
+        "descripcion",
+        "descuento_porcentaje",
+        "documentId",
+        "entidad_federativa",
+        "establecimiento",
+        "fecha_expiracion",
+        "id",
+        "id_offer",
+        "moneda",
+        "precio_oferta",
+        "precio_original",
+        "publishedAt",
+        "tipo_oferta",
+        "titulo",
+        "updatedAt"
+      ]
+    },
+    {
+      "service": "tracardi",
+      "http": 200,
+      "allow_origin": "*"
+    }
+  ],
+  "read_only": true,
+  "no_offer_values_or_profile_data_stored": true
+}

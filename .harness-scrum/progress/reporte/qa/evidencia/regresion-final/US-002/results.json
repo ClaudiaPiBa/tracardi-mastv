@@ -1,0 +1,516 @@
+{
+  "scope": "Regresión final focal de superficies modificadas por US004",
+  "date": "2026-11-06T04:10:04.603Z",
+  "results": [
+    {
+      "id": "01",
+      "name": "Vincular interacciones con perfil y serializar primera respuesta",
+      "status": "PASS",
+      "observed": {
+        "initialPendingRequests": 1,
+        "nextProfileMatches": true
+      },
+      "calls": [
+        {
+          "body": {
+            "source": {
+              "id": "demo-source"
+            },
+            "session": {
+              "id": "10a7b5bc-8523-4807-a236-34e4fc70f8ce"
+            },
+            "profile": null,
+            "events": [
+              {
+                "type": "comida-seg",
+                "properties": {
+                  "category": "Comida",
+                  "filter_time": "2026-11-06T04:10:00.596Z",
+                  "action": "category_filter"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "body": {
+            "source": {
+              "id": "demo-source"
+            },
+            "session": {
+              "id": "10a7b5bc-8523-4807-a236-34e4fc70f8ce"
+            },
+            "profile": {
+              "id": "00000000-0000-4000-8000-000000000002"
+            },
+            "events": [
+              {
+                "type": "offer-click",
+                "properties": {
+                  "id": "QA-1",
+                  "offer_id": "QA-1",
+                  "title": "QA beneficio 1",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-1",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "action": "offer_click"
+                }
+              },
+              {
+                "type": "offer-view",
+                "properties": {
+                  "id": "QA-1",
+                  "offer_id": "QA-1",
+                  "title": "QA beneficio 1",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-1",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "action": "offer_click"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "02",
+      "name": "Confirmar registro de canje",
+      "status": "PASS",
+      "observed": {
+        "redeems": 1,
+        "successOnlyAfterAcceptance": true,
+        "mobileDialogBounded": true
+      },
+      "calls": [
+        {
+          "body": {
+            "source": {
+              "id": "demo-source"
+            },
+            "session": {
+              "id": "c6feea8e-d30c-4c1d-a82a-048bebc41c6d"
+            },
+            "profile": null,
+            "events": [
+              {
+                "type": "comida-seg",
+                "properties": {
+                  "category": "Comida",
+                  "filter_time": "2026-11-06T04:10:01.779Z",
+                  "action": "category_filter"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "body": {
+            "source": {
+              "id": "demo-source"
+            },
+            "session": {
+              "id": "c6feea8e-d30c-4c1d-a82a-048bebc41c6d"
+            },
+            "profile": {
+              "id": "00000000-0000-4000-8000-000000000002"
+            },
+            "events": [
+              {
+                "type": "offer-click",
+                "properties": {
+                  "id": "QA-1",
+                  "offer_id": "QA-1",
+                  "title": "QA beneficio 1",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-1",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "action": "offer_click"
+                }
+              },
+              {
+                "type": "offer-view",
+                "properties": {
+                  "id": "QA-1",
+                  "offer_id": "QA-1",
+                  "title": "QA beneficio 1",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-1",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "action": "offer_click"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "body": {
+            "source": {
+              "id": "demo-source"
+            },
+            "session": {
+              "id": "c6feea8e-d30c-4c1d-a82a-048bebc41c6d"
+            },
+            "profile": {
+              "id": "00000000-0000-4000-8000-000000000002"
+            },
+            "events": [
+              {
+                "type": "offer-redeem",
+                "properties": {
+                  "id": "QA-1",
+                  "offer_id": "QA-1",
+                  "title": "QA beneficio 1",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-1",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "coupon": "QA-CUPON-1",
+                  "action": "offer_redeem",
+                  "redeemed_at": "2026-11-06T04:10:01.922Z"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "03",
+      "name": "Evitar duplicados pendientes y no interrumpir con respuesta tardía",
+      "status": "PASS",
+      "observed": {
+        "redeems": 1,
+        "newDetailUnaffectedByLateAcceptance": true,
+        "stalePendingMessageCleared": true,
+        "secondOfferCanConfirm": true
+      },
+      "calls": [
+        {
+          "body": {
+            "source": {
+              "id": "demo-source"
+            },
+            "session": {
+              "id": "368c1bba-4871-4595-aaa8-54aa89b34ce1"
+            },
+            "profile": null,
+            "events": [
+              {
+                "type": "comida-seg",
+                "properties": {
+                  "category": "Comida",
+                  "filter_time": "2026-11-06T04:10:02.873Z",
+                  "action": "category_filter"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "body": {
+            "source": {
+              "id": "demo-source"
+            },
+            "session": {
+              "id": "368c1bba-4871-4595-aaa8-54aa89b34ce1"
+            },
+            "profile": {
+              "id": "00000000-0000-4000-8000-000000000002"
+            },
+            "events": [
+              {
+                "type": "offer-click",
+                "properties": {
+                  "id": "QA-1",
+                  "offer_id": "QA-1",
+                  "title": "QA beneficio 1",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-1",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "action": "offer_click"
+                }
+              },
+              {
+                "type": "offer-view",
+                "properties": {
+                  "id": "QA-1",
+                  "offer_id": "QA-1",
+                  "title": "QA beneficio 1",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-1",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "action": "offer_click"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "body": {
+            "source": {
+              "id": "demo-source"
+            },
+            "session": {
+              "id": "368c1bba-4871-4595-aaa8-54aa89b34ce1"
+            },
+            "profile": {
+              "id": "00000000-0000-4000-8000-000000000002"
+            },
+            "events": [
+              {
+                "type": "offer-redeem",
+                "properties": {
+                  "id": "QA-1",
+                  "offer_id": "QA-1",
+                  "title": "QA beneficio 1",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-1",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "coupon": "QA-CUPON-1",
+                  "action": "offer_redeem",
+                  "redeemed_at": "2026-11-06T04:10:03.000Z"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "body": {
+            "source": {
+              "id": "demo-source"
+            },
+            "session": {
+              "id": "368c1bba-4871-4595-aaa8-54aa89b34ce1"
+            },
+            "profile": {
+              "id": "00000000-0000-4000-8000-000000000002"
+            },
+            "events": [
+              {
+                "type": "offer-click",
+                "properties": {
+                  "id": "QA-SEGUNDA",
+                  "offer_id": "QA-SEGUNDA",
+                  "title": "QA beneficio SEGUNDA",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-SEGUNDA",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "action": "offer_click"
+                }
+              },
+              {
+                "type": "offer-view",
+                "properties": {
+                  "id": "QA-SEGUNDA",
+                  "offer_id": "QA-SEGUNDA",
+                  "title": "QA beneficio SEGUNDA",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-SEGUNDA",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "action": "offer_click"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "04",
+      "name": "Informar canje no confirmado: rechazo del registro",
+      "status": "PASS",
+      "observed": {
+        "result": "rechazo del registro",
+        "registeredMessageShown": false,
+        "identityUnchanged": true,
+        "invalidJSONAlsoCovered": false
+      },
+      "calls": [
+        {
+          "body": {
+            "source": {
+              "id": "demo-source"
+            },
+            "session": {
+              "id": "900e6cba-9f80-4862-a871-3ea6fb544ed2"
+            },
+            "profile": null,
+            "events": [
+              {
+                "type": "comida-seg",
+                "properties": {
+                  "category": "Comida",
+                  "filter_time": "2026-11-06T04:10:04.349Z",
+                  "action": "category_filter"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "body": {
+            "source": {
+              "id": "demo-source"
+            },
+            "session": {
+              "id": "900e6cba-9f80-4862-a871-3ea6fb544ed2"
+            },
+            "profile": {
+              "id": "00000000-0000-4000-8000-000000000002"
+            },
+            "events": [
+              {
+                "type": "offer-click",
+                "properties": {
+                  "id": "QA-1",
+                  "offer_id": "QA-1",
+                  "title": "QA beneficio 1",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-1",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "action": "offer_click"
+                }
+              },
+              {
+                "type": "offer-view",
+                "properties": {
+                  "id": "QA-1",
+                  "offer_id": "QA-1",
+                  "title": "QA beneficio 1",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-1",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "action": "offer_click"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "body": {
+            "source": {
+              "id": "demo-source"
+            },
+            "session": {
+              "id": "900e6cba-9f80-4862-a871-3ea6fb544ed2"
+            },
+            "profile": {
+              "id": "00000000-0000-4000-8000-000000000002"
+            },
+            "events": [
+              {
+                "type": "offer-redeem",
+                "properties": {
+                  "id": "QA-1",
+                  "offer_id": "QA-1",
+                  "title": "QA beneficio 1",
+                  "category": "Comida",
+                  "store": "QA comercio sintético",
+                  "entidad_federativa": null,
+                  "price_original": 200,
+                  "price": 170,
+                  "price_offer": 170,
+                  "discount_percentage": 15,
+                  "coupon_code": "QA-CUPON-1",
+                  "expiration_date": "2030-12-31",
+                  "offer_type": "descuento",
+                  "coupon": "QA-CUPON-1",
+                  "action": "offer_redeem",
+                  "redeemed_at": "2026-11-06T04:10:04.473Z"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "uncaughtErrors": []
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "viewport": {
+    "width": 320,
+    "height": 568
+  },
+  "beforeWheel": {
+    "top": 640.703125,
+    "bottom": 688.703125,
+    "viewport": 568,
+    "documentHeight": 1402,
+    "bodyOverflow": "hidden"
+  },
+  "afterWheel": {
+    "top": 640.703125,
+    "bottom": 688.703125,
+    "dialogScrollTop": 0
+  }
+}

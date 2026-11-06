@@ -1,0 +1,341 @@
+{
+  "scope": "Regresión final focal de superficies modificadas por US004",
+  "date": "2026-11-06T04:10:11.459Z",
+  "results": [
+    {
+      "id": "01",
+      "name": "Aplicar nuevos intereses recibidos",
+      "status": "PASS",
+      "observed": {
+        "fullMapReplacement": true,
+        "noReload": true,
+        "detailAndDialogStayOpen": true,
+        "noRenderEvents": true,
+        "newProfileInvalidatesOldUnlessSameResponseMap": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T04:10:05.520Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "offer-click",
+              "properties": {
+                "id": "QA-COMIDA-1",
+                "offer_id": "QA-COMIDA-1",
+                "title": "QA beneficio COMIDA-1",
+                "category": "Comida",
+                "store": "QA comercio sintético",
+                "entidad_federativa": null,
+                "price_original": 200,
+                "price": 170,
+                "price_offer": 170,
+                "discount_percentage": 15,
+                "coupon_code": "QA-CUPON-COMIDA-1",
+                "expiration_date": "2030-12-31",
+                "offer_type": "descuento",
+                "action": "offer_click"
+              }
+            },
+            {
+              "type": "offer-view",
+              "properties": {
+                "id": "QA-COMIDA-1",
+                "offer_id": "QA-COMIDA-1",
+                "title": "QA beneficio COMIDA-1",
+                "category": "Comida",
+                "store": "QA comercio sintético",
+                "entidad_federativa": null,
+                "price_original": 200,
+                "price": 170,
+                "price_offer": 170,
+                "discount_percentage": 15,
+                "coupon_code": "QA-CUPON-COMIDA-1",
+                "expiration_date": "2030-12-31",
+                "offer_type": "descuento",
+                "action": "offer_click"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T04:10:05.865Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T04:10:06.011Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T04:10:06.159Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "02",
+      "name": "Recuperar recomendaciones al volver",
+      "status": "PASS",
+      "observed": {
+        "restoredKnownProfileMap": true,
+        "reloadDoesNotTrack": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T04:10:07.630Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "03",
+      "name": "Ignorar preferencias guardadas no interpretables",
+      "status": "PASS",
+      "observed": {
+        "corruptAndMalformedSavedMapsIgnored": true,
+        "otherProfileMapIgnored": true,
+        "explicitExplorationAvailable": true,
+        "storageDeniedKeepsAcceptedMapInMemory": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T04:10:09.050Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T04:10:09.476Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T04:10:09.887Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T04:10:10.308Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T04:10:10.708Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "e155a0fe-c626-49c7-b97c-485d53f32c52"
+          },
+          "profile": null,
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T04:10:11.118Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "e155a0fe-c626-49c7-b97c-485d53f32c52"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T04:10:11.262Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    }
+  ]
+}

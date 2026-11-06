@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-05T20:07:30.097Z",
+  "scope": "Real collector receipt only; synthetic offers and fresh anonymous session; no administrative reads or workflow claims",
+  "origin": "http://127.0.0.1:44899",
+  "collector": "http://localhost:8686/track",
+  "source": "demo-source",
+  "requests": [
+    {
+      "types": [
+        "comida-seg"
+      ],
+      "syntheticOfferIds": [],
+      "initialProfileNull": true
+    },
+    {
+      "types": [
+        "offer-click",
+        "offer-view"
+      ],
+      "syntheticOfferIds": [
+        "QA-REAL-QA-SYNTHETIC",
+        "QA-REAL-QA-SYNTHETIC"
+      ],
+      "initialProfileNull": false
+    }
+  ],
+  "receipts": [
+    {
+      "httpStatus": 200,
+      "acceptedSemantically": true,
+      "rootKeys": [
+        "task",
+        "ux",
+        "response",
+        "profile"
+      ],
+      "taskPresent": true,
+      "profilePresent": true,
+      "interestsType": "object",
+      "corsAllowOrigin": "*"
+    },
+    {
+      "httpStatus": 200,
+      "acceptedSemantically": true,
+      "rootKeys": [
+        "task",
+        "ux",
+        "response",
+        "profile"
+      ],
+      "taskPresent": true,
+      "profilePresent": true,
+      "interestsType": "object",
+      "corsAllowOrigin": "*"
+    }
+  ],
+  "sameSession": true,
+  "knownProfileReused": true,
+  "uncaughtErrors": []
+}

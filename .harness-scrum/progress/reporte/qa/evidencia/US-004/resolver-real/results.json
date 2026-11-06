@@ -1,0 +1,17 @@
+{
+  "scope": "Una resolución de punto público sintético; disponibilidad y CORS únicamente",
+  "date": "2026-11-06T04:09:56.520Z",
+  "requests": 1,
+  "validReferer": true,
+  "networkStatus": 200,
+  "allowOrigin": "*",
+  "observed": {
+    "fetchReadable": true,
+    "httpStatus": 200,
+    "hasAddress": true,
+    "hasRegionalCode": true,
+    "responseError": false
+  },
+  "noUserGpsRequested": true,
+  "noCoordinatesQueryResponseOrProfileStoredInEvidence": true
+}

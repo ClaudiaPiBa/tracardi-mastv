@@ -1,0 +1,305 @@
+{
+  "scope": "US-001 controlled browser functional scenarios",
+  "date": "2026-11-05T19:47:13.060Z",
+  "results": [
+    {
+      "id": "01",
+      "name": "Consultar la categoría con datos remotos",
+      "status": "PASS",
+      "started": "2026-11-05T19:47:01.009Z",
+      "observed": {
+        "cards": 1,
+        "source": "single synthetic published offer; original embedded offers absent"
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "01.png"
+    },
+    {
+      "id": "02",
+      "name": "Reconocer una carga de catálogo en curso",
+      "status": "PASS",
+      "started": "2026-11-05T19:47:02.022Z",
+      "observed": {
+        "loadingStatus": "Cargando ofertas…",
+        "emptyStateDuringWait": false
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "02.png"
+    },
+    {
+      "id": "03",
+      "name": "Consultar todas las páginas publicadas",
+      "status": "PASS",
+      "started": "2026-11-05T19:47:03.050Z",
+      "observed": {
+        "cards": 101,
+        "pages": [
+          1,
+          2
+        ],
+        "initialPageSize": 100
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=2",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "03.png"
+    },
+    {
+      "id": "04",
+      "name": "Abrir un detalle coherente con la tarjeta",
+      "status": "PASS",
+      "started": "2026-11-05T19:47:04.122Z",
+      "observed": {
+        "selected": "QA-DETALLE-2",
+        "conditions": "published synthetic economics/currency/expiry/type",
+        "confirmationMatches": true,
+        "keyboard": "Tab / Shift+Tab / Escape / focus restoration"
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "04.png"
+    },
+    {
+      "id": "05",
+      "name": "Copiar el cupón publicado",
+      "status": "PASS",
+      "started": "2026-11-05T19:47:05.206Z",
+      "observed": {
+        "clipboard": "QA-CUPON-CATALOGO",
+        "feedback": "¡Código copiado!"
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "05.png"
+    },
+    {
+      "id": "06",
+      "name": "Reconocer un catálogo publicado sin ofertas",
+      "status": "PASS",
+      "started": "2026-11-05T19:47:06.421Z",
+      "observed": {
+        "state": "No hay promociones disponibles."
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "06.png"
+    },
+    {
+      "id": "07",
+      "name": "Recuperar una carga fallida",
+      "status": "PASS",
+      "started": "2026-11-05T19:47:07.614Z",
+      "observed": {
+        "failedPage": 2,
+        "partialCards": 0,
+        "retryVisible": true
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=2",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "07.png"
+    },
+    {
+      "id": "08",
+      "name": "Volver a intentar la carga",
+      "status": "PASS",
+      "started": "2026-11-05T19:47:08.615Z",
+      "observed": {
+        "attempts": 2,
+        "recoveredCards": 1
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "08.png"
+    },
+    {
+      "id": "09",
+      "name": "Separar ofertas incompletas de ofertas utilizables",
+      "status": "PASS",
+      "started": "2026-11-05T19:47:09.749Z",
+      "observed": {
+        "validCards": 1,
+        "omittedCards": 1,
+        "warningVisible": true
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "09.png"
+    },
+    {
+      "id": "10",
+      "name": "Consultar una oferta sin cupón",
+      "status": "PASS",
+      "started": "2026-11-05T19:47:10.802Z",
+      "observed": {
+        "coupon": "unavailable",
+        "copyDisabled": true,
+        "redeemDisabled": true,
+        "clipboardUnchanged": true
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "10.png"
+    },
+    {
+      "id": "11",
+      "name": "Acceder al catálogo desde Inicio",
+      "status": "PASS",
+      "started": "2026-11-05T19:47:11.869Z",
+      "observed": {
+        "featuredAccesses": 3,
+        "fixedOfferDetailOpened": false
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "11.png"
+    }
+  ]
+}

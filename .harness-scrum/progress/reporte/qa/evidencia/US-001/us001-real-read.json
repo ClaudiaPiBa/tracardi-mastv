@@ -1,0 +1,88 @@
+{
+  "scope": "READ ONLY real Strapi from browser; schema/counts only; no actual offer values or profile data",
+  "date": "2026-11-05T19:46:57.538Z",
+  "origin": "http://127.0.0.1:35687",
+  "endpoint": "http://localhost:1337/api/offers",
+  "responses": [
+    {
+      "httpStatus": 200,
+      "rootType": "object",
+      "rootKeys": [
+        "data",
+        "meta"
+      ],
+      "recordCount": 7,
+      "recordFieldTypes": {
+        "id": [
+          "number"
+        ],
+        "documentId": [
+          "string"
+        ],
+        "id_offer": [
+          "string"
+        ],
+        "titulo": [
+          "string"
+        ],
+        "descripcion": [
+          "string"
+        ],
+        "establecimiento": [
+          "string"
+        ],
+        "precio_original": [
+          "number"
+        ],
+        "precio_oferta": [
+          "number"
+        ],
+        "moneda": [
+          "string"
+        ],
+        "descuento_porcentaje": [
+          "number"
+        ],
+        "codigo_cupon": [
+          "string"
+        ],
+        "fecha_expiracion": [
+          "string"
+        ],
+        "tipo_oferta": [
+          "string"
+        ],
+        "createdAt": [
+          "string"
+        ],
+        "updatedAt": [
+          "string"
+        ],
+        "publishedAt": [
+          "string"
+        ],
+        "categoria": [
+          "string"
+        ],
+        "entidad_federativa": [
+          "null",
+          "string"
+        ]
+      },
+      "corsAllowOrigin": "http://127.0.0.1:35687"
+    }
+  ],
+  "ui": {
+    "loaded": true,
+    "error": false,
+    "normalizedOfferCount": 7,
+    "warningVisible": false
+  },
+  "blockedExternalRequests": [
+    {
+      "origin": "https://fonts.googleapis.com",
+      "path": "/css2",
+      "method": "GET"
+    }
+  ]
+}

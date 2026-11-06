@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "scope": "LONG320 regression with asynchronous confirmation and status message",
+  "initial": {
+    "top": 18,
+    "bottom": 550,
+    "viewport": 568,
+    "scrollTop": 0,
+    "scrollHeight": 999,
+    "clientHeight": 532
+  },
+  "scrolled": {
+    "top": 18,
+    "bottom": 550,
+    "viewport": 568,
+    "scrollTop": 467,
+    "scrollHeight": 999,
+    "clientHeight": 532
+  },
+  "pending": {
+    "top": 18,
+    "bottom": 550,
+    "viewport": 568,
+    "scrollTop": 467,
+    "scrollHeight": 1029,
+    "clientHeight": 532
+  },
+  "focus": [
+    {
+      "id": "closeConfirm",
+      "top": 28,
+      "bottom": 58
+    },
+    {
+      "id": "confirmRedeem",
+      "top": 407.40625,
+      "bottom": 455.40625
+    },
+    {
+      "id": "cancelRedeem",
+      "top": 469.40625,
+      "bottom": 518.40625
+    }
+  ],
+  "redeems": 1,
+  "noSuccessBeforeAcceptance": true,
+  "cancelCloseAndKeyboardWork": true,
+  "uncaughtErrors": []
+}

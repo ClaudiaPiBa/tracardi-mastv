@@ -1,0 +1,209 @@
+{
+  "scope": "Regresión final focal de superficies modificadas por US004",
+  "date": "2026-11-06T04:09:59.597Z",
+  "results": [
+    {
+      "id": "01",
+      "name": "Reconocer una carga de catálogo en curso",
+      "status": "PASS",
+      "started": "2026-11-06T04:09:53.349Z",
+      "observed": {
+        "loadingStatus": "Cargando ofertas…",
+        "emptyStateDuringWait": false
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "01.png"
+    },
+    {
+      "id": "02",
+      "name": "Abrir un detalle coherente con la tarjeta",
+      "status": "PASS",
+      "started": "2026-11-06T04:09:54.337Z",
+      "observed": {
+        "selected": "QA-DETALLE-2",
+        "conditions": "published synthetic economics/currency/expiry/type",
+        "confirmationMatches": true,
+        "keyboard": "Tab / Shift+Tab / Escape / focus restoration"
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "OPTIONS",
+          "body": null
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "OPTIONS",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "02.png"
+    },
+    {
+      "id": "03",
+      "name": "Copiar el cupón publicado",
+      "status": "PASS",
+      "started": "2026-11-06T04:09:55.381Z",
+      "observed": {
+        "clipboard": "QA-CUPON-CATALOGO",
+        "feedback": "¡Código copiado!"
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "OPTIONS",
+          "body": null
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "OPTIONS",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "03.png"
+    },
+    {
+      "id": "04",
+      "name": "Recuperar una carga fallida",
+      "status": "PASS",
+      "started": "2026-11-06T04:09:56.568Z",
+      "observed": {
+        "failedPage": 2,
+        "partialCards": 0,
+        "retryVisible": true
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=2",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "04.png"
+    },
+    {
+      "id": "05",
+      "name": "Volver a intentar la carga",
+      "status": "PASS",
+      "started": "2026-11-06T04:09:57.563Z",
+      "observed": {
+        "attempts": 2,
+        "recoveredCards": 1
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "OPTIONS",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "05.png"
+    },
+    {
+      "id": "06",
+      "name": "Acceder al catálogo desde Inicio",
+      "status": "PASS",
+      "started": "2026-11-06T04:09:58.550Z",
+      "observed": {
+        "featuredAccesses": 3,
+        "fixedOfferDetailOpened": false
+      },
+      "requests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "OPTIONS",
+          "body": null
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "OPTIONS",
+          "body": null
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "OPTIONS",
+          "body": null
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "screenshot": "06.png"
+    }
+  ]
+}

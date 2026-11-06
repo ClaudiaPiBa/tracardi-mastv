@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-05T19:52:01.331Z",
+  "results": [
+    {
+      "name": "texto remoto extenso en móvil",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Confirmation action reachable with long remote content: {\"top\":640.703125,\"bottom\":688.703125,\"viewport\":568,\"documentHeight\":1402,\"bodyOverflow\":\"hidden\"}\n\nfalse !== true\n\n    at tests (file:///tmp/tracardi-qa/us001-regression.mjs:62:12)\n    at async file:///tmp/tracardi-qa/us001-regression.mjs:73:5",
+      "uncaughtErrors": []
+    }
+  ]
+}

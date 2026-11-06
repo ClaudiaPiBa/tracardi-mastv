@@ -1,0 +1,1044 @@
+{
+  "scope": "US004 18 expanded browser cases; only synthetic external responses",
+  "date": "2026-11-06T03:52:50.948Z",
+  "results": [
+    {
+      "id": "01",
+      "name": "Esperar una decisión antes de solicitar ubicación",
+      "status": "PASS",
+      "observed": {
+        "noCoordinatesBeforeAllow": true,
+        "allowDisabledWhilePending": true,
+        "lateCoordinatesIgnoredAfterCloseRejectEscape": true
+      },
+      "geolocationRequests": 3,
+      "resolutions": [],
+      "calls": [],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "02",
+      "name": "Aplicar una región resuelta con consentimiento",
+      "status": "PASS",
+      "observed": {
+        "region": "MX-CMX",
+        "nationalMissingNullAndBlankIncluded": true,
+        "caseAndWhitespaceNormalized": true,
+        "otherRegionExcluded": true
+      },
+      "geolocationRequests": 1,
+      "resolutions": [
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        }
+      ],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "geo-location",
+              "properties": {
+                "iso_region": "MX-CMX",
+                "ISO3166-2-lvl4": "MX-CMX",
+                "country": "QA país",
+                "country_code": "mx",
+                "state": "QA región",
+                "action": "geo_consent_granted",
+                "consented_at": "2026-11-06T03:52:28.347Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:28.490Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "03",
+      "name": "Asociar región al visitante sin coordenadas",
+      "status": "PASS",
+      "observed": {
+        "singleGeoEvent": true,
+        "identityAndConsentAssociated": true,
+        "onlyExplicitRegionFields": true,
+        "noCoordinatePersistenceTrackingOrConsole": true
+      },
+      "geolocationRequests": 1,
+      "resolutions": [
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        }
+      ],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "geo-location",
+              "properties": {
+                "iso_region": "MX-CMX",
+                "ISO3166-2-lvl4": "MX-CMX",
+                "country": "QA país",
+                "country_code": "mx",
+                "state": "QA región",
+                "action": "geo_consent_granted",
+                "consented_at": "2026-11-06T03:52:29.397Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "04",
+      "name": "Continuar sin compartir ubicación: rechazar",
+      "status": "PASS",
+      "observed": {
+        "decision": "rechazar",
+        "allNationalAndRegionalOffers": true,
+        "noCoordinatesOrGeoEvent": true
+      },
+      "geolocationRequests": 0,
+      "resolutions": [],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:30.431Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "05",
+      "name": "Continuar sin compartir ubicación: cerrar el diálogo",
+      "status": "PASS",
+      "observed": {
+        "decision": "cerrar el diálogo",
+        "allNationalAndRegionalOffers": true,
+        "noCoordinatesOrGeoEvent": true
+      },
+      "geolocationRequests": 0,
+      "resolutions": [],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:31.491Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "06",
+      "name": "Continuar sin compartir ubicación: salir mediante Escape",
+      "status": "PASS",
+      "observed": {
+        "decision": "salir mediante Escape",
+        "allNationalAndRegionalOffers": true,
+        "noCoordinatesOrGeoEvent": true
+      },
+      "geolocationRequests": 0,
+      "resolutions": [],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:32.497Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "07",
+      "name": "Continuar sin región: permiso del navegador denegado",
+      "status": "PASS",
+      "observed": {
+        "result": "permiso del navegador denegado",
+        "impedimentExplainedInCatalog": true,
+        "allRegionsExplorable": true,
+        "noUnresolvedGeoEvent": true
+      },
+      "geolocationRequests": 1,
+      "resolutions": [],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:33.482Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "08",
+      "name": "Continuar sin región: ubicación no soportada",
+      "status": "PASS",
+      "observed": {
+        "result": "ubicación no soportada",
+        "impedimentExplainedInCatalog": true,
+        "allRegionsExplorable": true,
+        "noUnresolvedGeoEvent": true
+      },
+      "geolocationRequests": 0,
+      "resolutions": [],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:34.497Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "09",
+      "name": "Continuar sin región: tiempo de espera agotado",
+      "status": "PASS",
+      "observed": {
+        "result": "tiempo de espera agotado",
+        "impedimentExplainedInCatalog": true,
+        "allRegionsExplorable": true,
+        "noUnresolvedGeoEvent": true
+      },
+      "geolocationRequests": 1,
+      "resolutions": [],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:35.553Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "10",
+      "name": "Continuar sin región: resolución sin código regional",
+      "status": "PASS",
+      "observed": {
+        "result": "resolución sin código regional",
+        "impedimentExplainedInCatalog": true,
+        "allRegionsExplorable": true,
+        "noUnresolvedGeoEvent": true
+      },
+      "geolocationRequests": 1,
+      "resolutions": [
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        }
+      ],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:36.612Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "11",
+      "name": "Continuar sin región: servicio de resolución fallido",
+      "status": "PASS",
+      "observed": {
+        "result": "servicio de resolución fallido",
+        "impedimentExplainedInCatalog": true,
+        "allRegionsExplorable": true,
+        "noUnresolvedGeoEvent": true,
+        "lateResolverIgnoredAfterClose": true
+      },
+      "geolocationRequests": 2,
+      "resolutions": [
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        },
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        }
+      ],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:37.703Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "12",
+      "name": "Restaurar una región consentida",
+      "status": "PASS",
+      "observed": {
+        "region": "MX-CMX",
+        "restoredAfterActualReload": true,
+        "noNewCoordinatesResolverOrGeoEvent": true
+      },
+      "geolocationRequests": 0,
+      "resolutions": [],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:39.763Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:40.342Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "13",
+      "name": "Sustituir la región por una nueva decisión",
+      "status": "PASS",
+      "observed": {
+        "oldRegionReplaced": true,
+        "lvl3FallbackAndNormalization": true,
+        "sameVisitorIdentity": true
+      },
+      "geolocationRequests": 1,
+      "resolutions": [
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        }
+      ],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:41.251Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "geo-location",
+              "properties": {
+                "iso_region": "MX-JAL",
+                "ISO3166-2-lvl4": "MX-JAL",
+                "country": "QA país",
+                "country_code": "mx",
+                "state": "QA región",
+                "action": "geo_consent_granted",
+                "consented_at": "2026-11-06T03:52:41.346Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "14",
+      "name": "Retirar una región conservada",
+      "status": "PASS",
+      "observed": {
+        "regionRemovedFromUiAndStorage": true,
+        "allRegionsRestored": true,
+        "affinitiesUnchanged": true
+      },
+      "geolocationRequests": 0,
+      "resolutions": [],
+      "calls": [],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "15",
+      "name": "Conservar la región anterior si falla su actualización",
+      "status": "PASS",
+      "observed": {
+        "previousRegionPreserved": true,
+        "updateFailureExplained": true,
+        "noUnresolvedEvent": true
+      },
+      "geolocationRequests": 1,
+      "resolutions": [
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        }
+      ],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:43.354Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "16",
+      "name": "Aplicar región aunque no pueda sincronizarse su evento",
+      "status": "PASS",
+      "observed": {
+        "localRegionSurvivesHttpSemanticAndNetworkRejection": true,
+        "noFalseSyncSuccess": true,
+        "lateSyncCannotRestoreWithdrawnRegion": true
+      },
+      "geolocationRequests": 4,
+      "resolutions": [
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        },
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        },
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        },
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        }
+      ],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "geo-location",
+              "properties": {
+                "iso_region": "MX-CMX",
+                "ISO3166-2-lvl4": "MX-CMX",
+                "country": "QA país",
+                "country_code": "mx",
+                "state": "QA región",
+                "action": "geo_consent_granted",
+                "consented_at": "2026-11-06T03:52:44.463Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:44.586Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "geo-location",
+              "properties": {
+                "iso_region": "MX-CMX",
+                "ISO3166-2-lvl4": "MX-CMX",
+                "country": "QA país",
+                "country_code": "mx",
+                "state": "QA región",
+                "action": "geo_consent_granted",
+                "consented_at": "2026-11-06T03:52:44.608Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:45.515Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "geo-location",
+              "properties": {
+                "iso_region": "MX-CMX",
+                "ISO3166-2-lvl4": "MX-CMX",
+                "country": "QA país",
+                "country_code": "mx",
+                "state": "QA región",
+                "action": "geo_consent_granted",
+                "consented_at": "2026-11-06T03:52:45.530Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "comida-seg",
+              "properties": {
+                "category": "Comida",
+                "filter_time": "2026-11-06T03:52:46.484Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "geo-location",
+              "properties": {
+                "iso_region": "MX-CMX",
+                "ISO3166-2-lvl4": "MX-CMX",
+                "country": "QA país",
+                "country_code": "mx",
+                "state": "QA región",
+                "action": "geo_consent_granted",
+                "consented_at": "2026-11-06T03:52:46.495Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "17",
+      "name": "Combinar afinidad con elegibilidad regional",
+      "status": "PASS",
+      "observed": {
+        "regionalEligibilityBeforeAffinity": true,
+        "descendingAndStableOrder": true,
+        "explicitCategoryIgnoresAffinityButRespectsRegion": true
+      },
+      "geolocationRequests": 0,
+      "resolutions": [],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T03:52:48.749Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "ropa-seg",
+              "properties": {
+                "category": "Ropa",
+                "filter_time": "2026-11-06T03:52:48.845Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T03:52:48.852Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "18",
+      "name": "Actualizar afinidades devueltas al sincronizar región",
+      "status": "PASS",
+      "observed": {
+        "newMapReplacesPreviousThroughGeoAcceptance": true,
+        "lvl6Fallback": true,
+        "emptyMapAlsoRemovesRecommendations": true,
+        "noRenderEvents": true
+      },
+      "geolocationRequests": 2,
+      "resolutions": [
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        },
+        {
+          "method": "GET",
+          "queryKeys": [
+            "addressdetails",
+            "format",
+            "lat",
+            "lon"
+          ],
+          "hasReferer": true
+        }
+      ],
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "geo-location",
+              "properties": {
+                "iso_region": "MX-CMX",
+                "ISO3166-2-lvl4": "MX-CMX",
+                "country": "QA país",
+                "country_code": "mx",
+                "state": "QA región",
+                "action": "geo_consent_granted",
+                "consented_at": "2026-11-06T03:52:49.831Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000040"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "geo-location",
+              "properties": {
+                "iso_region": "MX-CMX",
+                "ISO3166-2-lvl4": "MX-CMX",
+                "country": "QA país",
+                "country_code": "mx",
+                "state": "QA región",
+                "action": "geo_consent_granted",
+                "consented_at": "2026-11-06T03:52:49.985Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    }
+  ]
+}

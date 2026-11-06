@@ -1,0 +1,824 @@
+{
+  "scope": "US003 16 functional browser scenarios; synthetic collector only",
+  "date": "2026-11-06T02:55:01.306Z",
+  "results": [
+    {
+      "id": "01",
+      "name": "Ordenar recomendaciones por afinidad",
+      "status": "PASS",
+      "observed": {
+        "descending": true,
+        "stableTies": true,
+        "caseAndWhitespaceNormalized": true,
+        "numericTextAccepted": true,
+        "partialNumericAndNonFiniteExcluded": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:42.122Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:42.128Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "02",
+      "name": "Excluir afinidad insuficiente: ausente",
+      "status": "PASS",
+      "observed": {
+        "interest": "ausente",
+        "visible": 0
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:43.178Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "03",
+      "name": "Excluir afinidad insuficiente: cero",
+      "status": "PASS",
+      "observed": {
+        "interest": "cero",
+        "visible": 0
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:44.143Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "04",
+      "name": "Excluir afinidad insuficiente: uno",
+      "status": "PASS",
+      "observed": {
+        "interest": "uno",
+        "visible": 0
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:45.120Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "05",
+      "name": "Excluir afinidad insuficiente: negativo",
+      "status": "PASS",
+      "observed": {
+        "interest": "negativo",
+        "visible": 0
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:46.066Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "06",
+      "name": "Excluir afinidad insuficiente: no numérico",
+      "status": "PASS",
+      "observed": {
+        "interest": "no numérico",
+        "visible": 0
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:46.989Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "07",
+      "name": "Reconocer visitante sin recomendaciones",
+      "status": "PASS",
+      "observed": {
+        "specificRecommendationMessage": true,
+        "allPublishedCategoriesAvailable": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:48.157Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "08",
+      "name": "Explorar categoría sin interés previo",
+      "status": "PASS",
+      "observed": {
+        "explicitCategoryIgnoresAffinity": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T02:54:49.095Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "09",
+      "name": "Aplicar nuevos intereses recibidos",
+      "status": "PASS",
+      "observed": {
+        "fullMapReplacement": true,
+        "noReload": true,
+        "detailAndDialogStayOpen": true,
+        "noRenderEvents": true,
+        "newProfileInvalidatesOldUnlessSameResponseMap": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:50.034Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "offer-click",
+              "properties": {
+                "id": "QA-COMIDA-1",
+                "offer_id": "QA-COMIDA-1",
+                "title": "QA beneficio COMIDA-1",
+                "category": "Comida",
+                "store": "QA comercio sintético",
+                "entidad_federativa": null,
+                "price_original": 200,
+                "price": 170,
+                "price_offer": 170,
+                "discount_percentage": 15,
+                "coupon_code": "QA-CUPON-COMIDA-1",
+                "expiration_date": "2030-12-31",
+                "offer_type": "descuento",
+                "action": "offer_click"
+              }
+            },
+            {
+              "type": "offer-view",
+              "properties": {
+                "id": "QA-COMIDA-1",
+                "offer_id": "QA-COMIDA-1",
+                "title": "QA beneficio COMIDA-1",
+                "category": "Comida",
+                "store": "QA comercio sintético",
+                "entidad_federativa": null,
+                "price_original": 200,
+                "price": 170,
+                "price_offer": 170,
+                "discount_percentage": 15,
+                "coupon_code": "QA-CUPON-COMIDA-1",
+                "expiration_date": "2030-12-31",
+                "offer_type": "descuento",
+                "action": "offer_click"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:50.381Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:50.526Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000004"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:50.672Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "10",
+      "name": "Eliminar recomendaciones al recibir mapa vacío",
+      "status": "PASS",
+      "observed": {
+        "emptyMapReplacesPrevious": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:51.672Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "11",
+      "name": "Conservar últimos intereses: aceptación sin intereses",
+      "status": "PASS",
+      "observed": {
+        "response": "aceptación sin intereses",
+        "lastMapPreserved": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:52.747Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "12",
+      "name": "Conservar últimos intereses: aceptación con intereses inválidos",
+      "status": "PASS",
+      "observed": {
+        "response": "aceptación con intereses inválidos",
+        "lastMapPreserved": true,
+        "malformedVariants": [
+          "null",
+          "array",
+          "text"
+        ]
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:53.769Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:53.938Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:54.082Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "13",
+      "name": "Conservar últimos intereses: rechazo del registro",
+      "status": "PASS",
+      "observed": {
+        "response": "rechazo del registro",
+        "lastMapPreserved": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:55.100Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "14",
+      "name": "Conservar últimos intereses: fallo de comunicación",
+      "status": "PASS",
+      "observed": {
+        "response": "fallo de comunicación",
+        "lastMapPreserved": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:56.153Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "15",
+      "name": "Recuperar recomendaciones al volver",
+      "status": "PASS",
+      "observed": {
+        "restoredKnownProfileMap": true,
+        "reloadDoesNotTrack": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:54:57.631Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    },
+    {
+      "id": "16",
+      "name": "Ignorar preferencias guardadas no interpretables",
+      "status": "PASS",
+      "observed": {
+        "corruptAndMalformedSavedMapsIgnored": true,
+        "otherProfileMapIgnored": true,
+        "explicitExplorationAvailable": true,
+        "storageDeniedKeepsAcceptedMapInMemory": true
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T02:54:58.958Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T02:54:59.363Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T02:54:59.759Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T02:55:00.145Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000030"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T02:55:00.541Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "e7d34dd3-89bc-499d-ac3c-10f31a9684fb"
+          },
+          "profile": null,
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:55:00.951Z"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "e7d34dd3-89bc-499d-ac3c-10f31a9684fb"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000003"
+          },
+          "events": [
+            {
+              "type": "category-filter",
+              "properties": {
+                "category": "Todos",
+                "filter_time": "2026-11-06T02:55:01.086Z"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": []
+    }
+  ]
+}

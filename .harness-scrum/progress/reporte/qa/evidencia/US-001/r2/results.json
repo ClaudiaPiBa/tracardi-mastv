@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-05T19:57:56.389Z",
+  "scope": "US001 revision2 focal CSS correction; base evidence reused",
+  "results": [
+    {
+      "name": "LONG320: bounded dialog, actual wheel, cancel and close",
+      "status": "PASS",
+      "observed": {
+        "initial": {
+          "top": 18,
+          "bottom": 550,
+          "height": 532,
+          "viewport": 568,
+          "scrollTop": 0,
+          "scrollHeight": 999,
+          "clientHeight": 532,
+          "overflowY": "auto"
+        },
+        "afterWheel": {
+          "top": 18,
+          "bottom": 550,
+          "height": 532,
+          "viewport": 568,
+          "scrollTop": 467,
+          "scrollHeight": 999,
+          "clientHeight": 532,
+          "overflowY": "auto"
+        },
+        "cancelByPointer": true,
+        "closeByPointer": true,
+        "contentComplete": true
+      },
+      "uncaughtErrors": []
+    },
+    {
+      "name": "LONG320: Tab reaches close/confirm/cancel, Enter confirms, Escape restores focus",
+      "status": "PASS",
+      "observed": {
+        "focus": [
+          {
+            "id": "closeConfirm",
+            "bounds": {
+              "top": 28,
+              "bottom": 58,
+              "height": 30,
+              "viewport": 568,
+              "scrollTop": 0,
+              "scrollHeight": 30,
+              "clientHeight": 30,
+              "overflowY": "visible"
+            }
+          },
+          {
+            "id": "confirmRedeem",
+            "bounds": {
+              "top": 407.40625,
+              "bottom": 455.40625,
+              "height": 48,
+              "viewport": 568,
+              "scrollTop": 0,
+              "scrollHeight": 48,
+              "clientHeight": 48,
+              "overflowY": "visible"
+            }
+          },
+          {
+            "id": "cancelRedeem",
+            "bounds": {
+              "top": 469.40625,
+              "bottom": 518.40625,
+              "height": 49,
+              "viewport": 568,
+              "scrollTop": 0,
+              "scrollHeight": 47,
+              "clientHeight": 47,
+              "overflowY": "visible"
+            }
+          }
+        ],
+        "confirmedByEnter": true,
+        "escapeConfirmation": true,
+        "focusRestored": true
+      },
+      "uncaughtErrors": []
+    },
+    {
+      "name": "Normal dialogs320/430/1024: location, confirm, success and keyboard",
+      "status": "PASS",
+      "observed": {
+        "sizes": [
+          {
+            "width": 320,
+            "height": 568,
+            "location": {
+              "top": 115.75,
+              "bottom": 452.234375,
+              "height": 336.484375,
+              "viewport": 568,
+              "scrollTop": 0,
+              "scrollHeight": 346,
+              "clientHeight": 336,
+              "overflowY": "auto"
+            },
+            "confirmation": {
+              "top": 75.75,
+              "bottom": 492.234375,
+              "height": 416.484375,
+              "viewport": 568,
+              "scrollTop": 0,
+              "scrollHeight": 416,
+              "clientHeight": 416,
+              "overflowY": "auto"
+            },
+            "success": {
+              "top": 135.75,
+              "bottom": 432.25,
+              "height": 296.5,
+              "viewport": 568,
+              "scrollTop": 0,
+              "scrollHeight": 297,
+              "clientHeight": 297,
+              "overflowY": "auto"
+            }
+          },
+          {
+            "width": 430,
+            "height": 932,
+            "location": {
+              "top": 297.75,
+              "bottom": 634.234375,
+              "height": 336.484375,
+              "viewport": 932,
+              "scrollTop": 0,
+              "scrollHeight": 346,
+              "clientHeight": 336,
+              "overflowY": "auto"
+            },
+            "confirmation": {
+              "top": 253.859375,
+              "bottom": 678.125,
+              "height": 424.265625,
+              "viewport": 932,
+              "scrollTop": 0,
+              "scrollHeight": 424,
+              "clientHeight": 424,
+              "overflowY": "auto"
+            },
+            "success": {
+              "top": 317.75,
+              "bottom": 614.25,
+              "height": 296.5,
+              "viewport": 932,
+              "scrollTop": 0,
+              "scrollHeight": 297,
+              "clientHeight": 297,
+              "overflowY": "auto"
+            }
+          },
+          {
+            "width": 1024,
+            "height": 768,
+            "location": {
+              "top": 215.75,
+              "bottom": 552.234375,
+              "height": 336.484375,
+              "viewport": 768,
+              "scrollTop": 0,
+              "scrollHeight": 346,
+              "clientHeight": 336,
+              "overflowY": "auto"
+            },
+            "confirmation": {
+              "top": 171.859375,
+              "bottom": 596.125,
+              "height": 424.265625,
+              "viewport": 768,
+              "scrollTop": 0,
+              "scrollHeight": 424,
+              "clientHeight": 424,
+              "overflowY": "auto"
+            },
+            "success": {
+              "top": 235.75,
+              "bottom": 532.25,
+              "height": 296.5,
+              "viewport": 768,
+              "scrollTop": 0,
+              "scrollHeight": 297,
+              "clientHeight": 297,
+              "overflowY": "auto"
+            }
+          }
+        ]
+      },
+      "uncaughtErrors": []
+    }
+  ],
+  "sourceHashes": {
+    "index.html": "94a2c583629c6ff082ba89cdb8f38dc689673287b22e105ece48c1c46841be21",
+    "css/styles.css": "937b70429e242f005b585e5d458a46f5402a1d959f3256f899abf37f7e04df98",
+    "js/app.js": "a68d6f77ab2e4c416461035aeb628cb7d31fdfd677e7f9c8baed8c73785ee255",
+    "js/catalog.js": "75d6a74e1660a3225c85ef90cd494583b6a87ef1a5a5869ed9020c84fec29853",
+    "js/config.js": "c1a72bb48e5925ad371333fec0d868a5cc35a0dfdcff9eca54cfbed20857bc7a"
+  },
+  "changedSinceBase": [
+    "css/styles.css"
+  ]
+}

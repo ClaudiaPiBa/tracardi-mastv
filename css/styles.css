@@ -8,3 +8,29 @@
 .offer-card__logo--dominos,.offer-card__logo--cinemex{font-size:inherit;font-style:normal}
 .detail-view{padding-top:0}
 @media(max-width:350px){.catalog-banner .gift-art{height:100px}}
+
+/* Catálogo remoto: piezas en flujo banner → filtros → avisos → tarjetas. */
+.catalog-status,.catalog-warning{margin:10px 12px;font-size:12px;line-height:1.5}
+.catalog-status:empty{display:none}
+.catalog-warning{padding:10px;border-radius:8px;background:#fff2ce;color:#654700}
+.retry-catalog{margin:12px auto}
+.offer-card__logo--generic{width:44px;height:44px;border-radius:9px;background:#f5f5f5;font-size:27px}
+.offer-card__heading h3,.offer-card__heading p,.detail-card h1,.detail-card h2,.tag,.confirm-summary{overflow-wrap:anywhere}
+.offer-card__description,.description-block p{white-space:pre-line;overflow-wrap:anywhere}
+.detail-conditions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:7px 12px;font-size:11px;line-height:1.4;margin-top:18px}
+.detail-conditions dt{font-weight:600}
+.detail-conditions dd{margin:0;overflow-wrap:anywhere}
+
+/* Los diálogos largos conservan todos sus controles alcanzables en móvil. */
+.dialog{max-height:calc(100vh - 36px);max-height:calc(100dvh - 36px);overflow-y:auto;overscroll-behavior:contain}
+@media(min-width:600px){.dialog{max-height:calc(100vh - 48px);max-height:calc(100dvh - 48px)}}
+
+.tracking-status{font-size:12px;line-height:1.5;overflow-wrap:anywhere;margin:12px 0}
+.tracking-status:empty{display:none}
+
+/* La región y su feedback permanecen en el flujo del catálogo. */
+.region-block{padding:12px 12px 0;overflow-wrap:anywhere}
+.region-status{font-size:12px;font-weight:600;margin:0 0 6px}
+.change-location{min-height:44px;padding:9px 17px;font-size:12px}
+.location-attribution{font-size:10px;line-height:1.5;margin:8px 0}
+.location-attribution a{color:var(--blue)}
