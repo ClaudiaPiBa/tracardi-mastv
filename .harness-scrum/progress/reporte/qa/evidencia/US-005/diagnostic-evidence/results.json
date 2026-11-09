@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-06T20:41:43.450Z",
+  "projectRoot": "/home/swumplurd/Documentos/devsarrollo/repos/tracardi-mastv",
+  "scope": "US-005 seven expanded Gherkin cases plus two focused regressions; synthetic external responses",
+  "results": [
+    {
+      "id": "01",
+      "name": "Imagen completa a 480px",
+      "status": "FAIL",
+      "error": "Error: Condition timeout: !document.querySelector(\"#catalogView\").hidden\n    at Object.waitFor (file:///tmp/mastv-us005-qa/cdp.mjs:64:11)\n    at async setup (file:///tmp/mastv-us005-qa/us005.mjs:58:6)\n    at async file:///tmp/mastv-us005-qa/us005.mjs:85:162"
+    }
+  ]
+}

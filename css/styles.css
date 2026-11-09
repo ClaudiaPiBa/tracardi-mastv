@@ -34,3 +34,7 @@
 .change-location{min-height:44px;padding:9px 17px;font-size:12px}
 .location-attribution{font-size:10px;line-height:1.5;margin:8px 0}
 .location-attribution a{color:var(--blue)}
+
+/* Cabecera: visual (hasta 90 × 80 px) + 9 px + título flexible; resto en flujo. */
+.offer-card__logo--promo{width:90px;height:80px;background:transparent;border-radius:0}
+.offer-card__logo .offer-card__image{object-fit:contain;object-position:center}

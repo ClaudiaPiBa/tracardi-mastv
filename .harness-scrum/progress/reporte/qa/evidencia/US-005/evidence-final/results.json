@@ -1,0 +1,923 @@
+{
+  "date": "2026-11-06T21:05:47.615Z",
+  "projectRoot": "/home/swumplurd/Documentos/devsarrollo/repos/tracardi-mastv",
+  "scope": "US-005 seven expanded Gherkin cases plus two focused regressions; synthetic external responses",
+  "results": [
+    {
+      "id": "01",
+      "name": "Imagen completa a 320px",
+      "status": "PASS",
+      "observed": {
+        "viewport": 320,
+        "scrollWidth": 320,
+        "cards": [
+          {
+            "title": "QA beneficio HORIZONTAL",
+            "card": {
+              "x": 7,
+              "y": 476.1875,
+              "width": 306,
+              "height": 221.5625,
+              "right": 313,
+              "bottom": 697.75
+            },
+            "image": {
+              "x": 20,
+              "y": 488.1875,
+              "width": 90,
+              "height": 80,
+              "right": 110,
+              "bottom": 568.1875
+            },
+            "natural": [
+              480,
+              120
+            ],
+            "fit": "contain",
+            "src": "http://localhost:1337/uploads/qa-horizontal.svg",
+            "alt": "",
+            "ariaHidden": "true",
+            "icon": "🍽️",
+            "iconHidden": true,
+            "promo": true,
+            "heading": {
+              "x": 119,
+              "y": 489.1875,
+              "width": 181,
+              "height": 15,
+              "right": 300,
+              "bottom": 504.1875
+            },
+            "button": {
+              "x": 20,
+              "y": 657.65625,
+              "width": 125,
+              "height": 26.09375,
+              "right": 145,
+              "bottom": 683.75
+            },
+            "buttonText": "Ver beneficio",
+            "tabIndex": 0,
+            "fontSize": "13px",
+            "paintedSize": [
+              90,
+              22.5
+            ]
+          },
+          {
+            "title": "QA beneficio VERTICAL-V4",
+            "card": {
+              "x": 7,
+              "y": 706.75,
+              "width": 306,
+              "height": 221.5625,
+              "right": 313,
+              "bottom": 928.3125
+            },
+            "image": {
+              "x": 20,
+              "y": 718.75,
+              "width": 90,
+              "height": 80,
+              "right": 110,
+              "bottom": 798.75
+            },
+            "natural": [
+              120,
+              320
+            ],
+            "fit": "contain",
+            "src": "http://localhost:1337/uploads/qa-vertical.svg",
+            "alt": "",
+            "ariaHidden": "true",
+            "icon": "🍽️",
+            "iconHidden": true,
+            "promo": true,
+            "heading": {
+              "x": 119,
+              "y": 719.75,
+              "width": 181,
+              "height": 15,
+              "right": 300,
+              "bottom": 734.75
+            },
+            "button": {
+              "x": 20,
+              "y": 888.21875,
+              "width": 125,
+              "height": 26.09375,
+              "right": 145,
+              "bottom": 914.3125
+            },
+            "buttonText": "Ver beneficio",
+            "tabIndex": 0,
+            "fontSize": "13px",
+            "paintedSize": [
+              30,
+              80
+            ]
+          }
+        ],
+        "accessibility": [
+          {
+            "role": "button",
+            "name": "Abrir menú"
+          },
+          {
+            "role": "image",
+            "name": "MASTV"
+          },
+          {
+            "role": "image",
+            "name": "Regalo con moño rojo"
+          },
+          {
+            "role": "heading",
+            "name": "Filtrar por categoría:"
+          },
+          {
+            "role": "heading",
+            "name": "Catálogo de Ofertas"
+          },
+          {
+            "role": "button",
+            "name": "Cambiar ubicación"
+          },
+          {
+            "role": "button",
+            "name": "Todos"
+          },
+          {
+            "role": "button",
+            "name": "Comida"
+          },
+          {
+            "role": "heading",
+            "name": "QA beneficio HORIZONTAL"
+          },
+          {
+            "role": "button",
+            "name": "Ver beneficio"
+          },
+          {
+            "role": "heading",
+            "name": "QA beneficio VERTICAL-V4"
+          },
+          {
+            "role": "button",
+            "name": "Ver beneficio"
+          }
+        ]
+      },
+      "calls": [],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "network": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&populate%5Bimagen_promo%5D=true&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-horizontal.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-vertical.svg",
+          "method": "GET",
+          "body": null
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "name": "Imagen completa a 480px",
+      "status": "PASS",
+      "observed": {
+        "viewport": 480,
+        "scrollWidth": 480,
+        "cards": [
+          {
+            "title": "QA beneficio HORIZONTAL",
+            "card": {
+              "x": 7,
+              "y": 433.1875,
+              "width": 466,
+              "height": 221.5625,
+              "right": 473,
+              "bottom": 654.75
+            },
+            "image": {
+              "x": 20,
+              "y": 445.1875,
+              "width": 90,
+              "height": 80,
+              "right": 110,
+              "bottom": 525.1875
+            },
+            "natural": [
+              480,
+              120
+            ],
+            "fit": "contain",
+            "src": "http://localhost:1337/uploads/qa-horizontal.svg",
+            "alt": "",
+            "ariaHidden": "true",
+            "icon": "🍽️",
+            "iconHidden": true,
+            "promo": true,
+            "heading": {
+              "x": 119,
+              "y": 446.1875,
+              "width": 341,
+              "height": 15,
+              "right": 460,
+              "bottom": 461.1875
+            },
+            "button": {
+              "x": 20,
+              "y": 614.65625,
+              "width": 125,
+              "height": 26.09375,
+              "right": 145,
+              "bottom": 640.75
+            },
+            "buttonText": "Ver beneficio",
+            "tabIndex": 0,
+            "fontSize": "13px",
+            "paintedSize": [
+              90,
+              22.5
+            ]
+          },
+          {
+            "title": "QA beneficio VERTICAL-V4",
+            "card": {
+              "x": 7,
+              "y": 663.75,
+              "width": 466,
+              "height": 221.5625,
+              "right": 473,
+              "bottom": 885.3125
+            },
+            "image": {
+              "x": 20,
+              "y": 675.75,
+              "width": 90,
+              "height": 80,
+              "right": 110,
+              "bottom": 755.75
+            },
+            "natural": [
+              120,
+              320
+            ],
+            "fit": "contain",
+            "src": "http://localhost:1337/uploads/qa-vertical.svg",
+            "alt": "",
+            "ariaHidden": "true",
+            "icon": "🍽️",
+            "iconHidden": true,
+            "promo": true,
+            "heading": {
+              "x": 119,
+              "y": 676.75,
+              "width": 341,
+              "height": 15,
+              "right": 460,
+              "bottom": 691.75
+            },
+            "button": {
+              "x": 20,
+              "y": 845.21875,
+              "width": 125,
+              "height": 26.09375,
+              "right": 145,
+              "bottom": 871.3125
+            },
+            "buttonText": "Ver beneficio",
+            "tabIndex": 0,
+            "fontSize": "13px",
+            "paintedSize": [
+              30,
+              80
+            ]
+          }
+        ],
+        "accessibility": [
+          {
+            "role": "button",
+            "name": "Abrir menú"
+          },
+          {
+            "role": "image",
+            "name": "MASTV"
+          },
+          {
+            "role": "image",
+            "name": "Regalo con moño rojo"
+          },
+          {
+            "role": "heading",
+            "name": "Filtrar por categoría:"
+          },
+          {
+            "role": "heading",
+            "name": "Catálogo de Ofertas"
+          },
+          {
+            "role": "button",
+            "name": "Cambiar ubicación"
+          },
+          {
+            "role": "button",
+            "name": "Todos"
+          },
+          {
+            "role": "button",
+            "name": "Comida"
+          },
+          {
+            "role": "heading",
+            "name": "QA beneficio HORIZONTAL"
+          },
+          {
+            "role": "button",
+            "name": "Ver beneficio"
+          },
+          {
+            "role": "heading",
+            "name": "QA beneficio VERTICAL-V4"
+          },
+          {
+            "role": "button",
+            "name": "Ver beneficio"
+          }
+        ]
+      },
+      "calls": [],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "network": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&populate%5Bimagen_promo%5D=true&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-horizontal.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-vertical.svg",
+          "method": "GET",
+          "body": null
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "name": "Imagen completa a 1024px",
+      "status": "PASS",
+      "observed": {
+        "viewport": 1024,
+        "scrollWidth": 1024,
+        "cards": [
+          {
+            "title": "QA beneficio HORIZONTAL",
+            "card": {
+              "x": 279,
+              "y": 433.1875,
+              "width": 466,
+              "height": 221.5625,
+              "right": 745,
+              "bottom": 654.75
+            },
+            "image": {
+              "x": 292,
+              "y": 445.1875,
+              "width": 90,
+              "height": 80,
+              "right": 382,
+              "bottom": 525.1875
+            },
+            "natural": [
+              480,
+              120
+            ],
+            "fit": "contain",
+            "src": "http://localhost:1337/uploads/qa-horizontal.svg",
+            "alt": "",
+            "ariaHidden": "true",
+            "icon": "🍽️",
+            "iconHidden": true,
+            "promo": true,
+            "heading": {
+              "x": 391,
+              "y": 446.1875,
+              "width": 341,
+              "height": 15,
+              "right": 732,
+              "bottom": 461.1875
+            },
+            "button": {
+              "x": 292,
+              "y": 614.65625,
+              "width": 125,
+              "height": 26.09375,
+              "right": 417,
+              "bottom": 640.75
+            },
+            "buttonText": "Ver beneficio",
+            "tabIndex": 0,
+            "fontSize": "13px",
+            "paintedSize": [
+              90,
+              22.5
+            ]
+          },
+          {
+            "title": "QA beneficio VERTICAL-V4",
+            "card": {
+              "x": 279,
+              "y": 663.75,
+              "width": 466,
+              "height": 221.5625,
+              "right": 745,
+              "bottom": 885.3125
+            },
+            "image": {
+              "x": 292,
+              "y": 675.75,
+              "width": 90,
+              "height": 80,
+              "right": 382,
+              "bottom": 755.75
+            },
+            "natural": [
+              120,
+              320
+            ],
+            "fit": "contain",
+            "src": "http://localhost:1337/uploads/qa-vertical.svg",
+            "alt": "",
+            "ariaHidden": "true",
+            "icon": "🍽️",
+            "iconHidden": true,
+            "promo": true,
+            "heading": {
+              "x": 391,
+              "y": 676.75,
+              "width": 341,
+              "height": 15,
+              "right": 732,
+              "bottom": 691.75
+            },
+            "button": {
+              "x": 292,
+              "y": 845.21875,
+              "width": 125,
+              "height": 26.09375,
+              "right": 417,
+              "bottom": 871.3125
+            },
+            "buttonText": "Ver beneficio",
+            "tabIndex": 0,
+            "fontSize": "13px",
+            "paintedSize": [
+              30,
+              80
+            ]
+          }
+        ],
+        "accessibility": [
+          {
+            "role": "button",
+            "name": "Abrir menú"
+          },
+          {
+            "role": "image",
+            "name": "MASTV"
+          },
+          {
+            "role": "image",
+            "name": "Regalo con moño rojo"
+          },
+          {
+            "role": "heading",
+            "name": "Filtrar por categoría:"
+          },
+          {
+            "role": "heading",
+            "name": "Catálogo de Ofertas"
+          },
+          {
+            "role": "button",
+            "name": "Cambiar ubicación"
+          },
+          {
+            "role": "button",
+            "name": "Todos"
+          },
+          {
+            "role": "button",
+            "name": "Comida"
+          },
+          {
+            "role": "heading",
+            "name": "QA beneficio HORIZONTAL"
+          },
+          {
+            "role": "button",
+            "name": "Ver beneficio"
+          },
+          {
+            "role": "heading",
+            "name": "QA beneficio VERTICAL-V4"
+          },
+          {
+            "role": "button",
+            "name": "Ver beneficio"
+          }
+        ]
+      },
+      "calls": [],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "network": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&populate%5Bimagen_promo%5D=true&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-horizontal.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-vertical.svg",
+          "method": "GET",
+          "body": null
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "name": "Fallback ausente",
+      "status": "PASS",
+      "observed": {
+        "viewport": 480,
+        "scrollWidth": 480,
+        "cards": [
+          {
+            "title": "QA beneficio FALLBACK",
+            "card": {
+              "x": 7,
+              "y": 433.1875,
+              "width": 466,
+              "height": 185.5625,
+              "right": 473,
+              "bottom": 618.75
+            },
+            "image": null,
+            "natural": null,
+            "fit": null,
+            "ariaHidden": "true",
+            "icon": "🍽️",
+            "iconHidden": false,
+            "promo": false,
+            "heading": {
+              "x": 73,
+              "y": 446.1875,
+              "width": 387,
+              "height": 15,
+              "right": 460,
+              "bottom": 461.1875
+            },
+            "button": {
+              "x": 20,
+              "y": 578.65625,
+              "width": 125,
+              "height": 26.09375,
+              "right": 145,
+              "bottom": 604.75
+            },
+            "buttonText": "Ver beneficio",
+            "tabIndex": 0,
+            "fontSize": "13px"
+          }
+        ]
+      },
+      "calls": [],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "network": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&populate%5Bimagen_promo%5D=true&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "name": "Fallback vacía",
+      "status": "PASS",
+      "observed": {
+        "viewport": 480,
+        "scrollWidth": 480,
+        "cards": [
+          {
+            "title": "QA beneficio FALLBACK",
+            "card": {
+              "x": 7,
+              "y": 433.1875,
+              "width": 466,
+              "height": 185.5625,
+              "right": 473,
+              "bottom": 618.75
+            },
+            "image": null,
+            "natural": null,
+            "fit": null,
+            "ariaHidden": "true",
+            "icon": "🎟️",
+            "iconHidden": false,
+            "promo": false,
+            "heading": {
+              "x": 73,
+              "y": 446.1875,
+              "width": 387,
+              "height": 15,
+              "right": 460,
+              "bottom": 461.1875
+            },
+            "button": {
+              "x": 20,
+              "y": 578.65625,
+              "width": 125,
+              "height": 26.09375,
+              "right": 145,
+              "bottom": 604.75
+            },
+            "buttonText": "Ver beneficio",
+            "tabIndex": 0,
+            "fontSize": "13px"
+          }
+        ]
+      },
+      "calls": [],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "network": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&populate%5Bimagen_promo%5D=true&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "name": "Fallback no disponible",
+      "status": "PASS",
+      "observed": {
+        "viewport": 480,
+        "scrollWidth": 480,
+        "cards": [
+          {
+            "title": "QA beneficio FALLBACK",
+            "card": {
+              "x": 7,
+              "y": 433.1875,
+              "width": 466,
+              "height": 185.5625,
+              "right": 473,
+              "bottom": 618.75
+            },
+            "image": null,
+            "natural": null,
+            "fit": null,
+            "ariaHidden": "true",
+            "icon": "👕",
+            "iconHidden": false,
+            "promo": false,
+            "heading": {
+              "x": 73,
+              "y": 446.1875,
+              "width": 387,
+              "height": 15,
+              "right": 460,
+              "bottom": 461.1875
+            },
+            "button": {
+              "x": 20,
+              "y": 578.65625,
+              "width": 125,
+              "height": 26.09375,
+              "right": 145,
+              "bottom": 604.75
+            },
+            "buttonText": "Ver beneficio",
+            "tabIndex": 0,
+            "fontSize": "13px"
+          }
+        ]
+      },
+      "calls": [],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "network": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&populate%5Bimagen_promo%5D=true&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/broken.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/broken.svg",
+          "method": "GET",
+          "body": null
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "name": "Abrir misma promoción con teclado Enter y Espacio",
+      "status": "FAIL",
+      "error": "Error: Condition timeout: !document.querySelector(\"#detailView\").hidden\n    at Object.waitFor (file:///tmp/mastv-us005-qa/cdp.mjs:64:11)\n    at async file:///tmp/mastv-us005-qa/us005.mjs:72:27\n    at async file:///tmp/mastv-us005-qa/us005.mjs:85:198",
+      "calls": [],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "network": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&populate%5Bimagen_promo%5D=true&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-horizontal.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-vertical.svg",
+          "method": "GET",
+          "body": null
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "name": "Regresión recomendaciones con imágenes",
+      "status": "PASS",
+      "observed": {
+        "titles": [
+          "QA beneficio CMX",
+          "QA beneficio JAL",
+          "QA beneficio NATIONAL"
+        ],
+        "thresholdExcludesRopa": true,
+        "noTrackingOnImageLoad": true
+      },
+      "calls": [],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "network": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&populate%5Bimagen_promo%5D=true&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-vertical.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-horizontal.svg",
+          "method": "GET",
+          "body": null
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "name": "Regresión región y categoría con imágenes",
+      "status": "PASS",
+      "observed": {
+        "region": "MX-CMX",
+        "nationalIncluded": true,
+        "jalExcluded": true,
+        "explicitCineImages": true,
+        "eventTypes": [
+          "cine-seg"
+        ]
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000050"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000005"
+          },
+          "events": [
+            {
+              "type": "cine-seg",
+              "properties": {
+                "category": "Cine",
+                "filter_time": "2026-11-06T21:05:47.462Z",
+                "action": "category_filter"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "network": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&populate%5Bimagen_promo%5D=true&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-vertical.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-horizontal.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "OPTIONS",
+          "body": null
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "POST",
+          "body": "{\"source\":{\"id\":\"demo-source\"},\"session\":{\"id\":\"00000000-0000-4000-8000-000000000050\"},\"profile\":{\"id\":\"00000000-0000-4000-8000-000000000005\"},\"events\":[{\"type\":\"cine-seg\",\"properties\":{\"category\":\"Cine\",\"filter_time\":\"2026-11-06T21:05:47.462Z\",\"action\":\"category_filter\"}}]}"
+        }
+      ]
+    }
+  ]
+}

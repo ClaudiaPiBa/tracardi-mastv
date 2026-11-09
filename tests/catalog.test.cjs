@@ -86,3 +86,37 @@ test('distingue catálogo vacío de todos los registros omitidos', async () => {
 test('tiempo límite aborta la consulta', async () => {
   await assert.rejects(loadOffers('http://catalog.test', async (_, {signal}) => new Promise((resolve, reject) => signal.addEventListener('abort', () => reject(new Error('abortado')))), 10), /abortado/);
 });
+
+
+test('normaliza imagen original plana y media Strapi v4 sin elegir miniaturas', () => {
+  const media = {url: '/uploads/promo.png', formats: {thumbnail: {url: '/uploads/mini.png'}}};
+  assert.equal(normalizeOffer({...offer(), imagen_promo: media}, 'http://strapi.test').promoImageUrl, 'http://strapi.test/uploads/promo.png');
+  assert.equal(normalizeOffer({id: 9, attributes: {...offer(), imagen_promo: {data: {id: 4, attributes: media}}}}, 'https://strapi.test').promoImageUrl, 'https://strapi.test/uploads/promo.png');
+  assert.equal(normalizeOffer({...offer(), imagen_promo: {url: 'https://cdn.test/promo.png'}}).promoImageUrl, 'https://cdn.test/promo.png');
+});
+test('imagen ausente, vacía o inválida conserva oferta para usar icono', () => {
+  const invalid = [undefined, null, '', {}, {data: null}, {url: ' '}, {url: 12}, {url: 'http://['}, {url: 'javascript:alert(1)'}, {url: 'data:image/png;base64,AAA'}, {url: 'file:///tmp/promo.png'}, {url: 'https://user:password@cdn.test/image.png'}, [], {data: []}];
+  for (const imagen_promo of invalid) {
+    const normalized = normalizeOffer({...offer(), imagen_promo}, 'http://strapi.test');
+    assert.equal(normalized.id, 'sintetica-1');
+    assert.equal(normalized.promoImageUrl, '');
+  }
+});
+test('cada página solicita imagen_promo y resuelve recursos en el origen de Strapi', async () => {
+  const calls = [];
+  const result = await loadOffers('https://strapi.test/api/offers?locale=es&status=published&pagination[start]=20&pagination[limit]=2', async (url) => {
+    const parsed = new URL(url);
+    calls.push(parsed);
+    const page = Number(parsed.searchParams.get('pagination[page]'));
+    const imagen_promo = page === 1 ? {url: '/uploads/uno.png'} : {data: {attributes: {url: 'uploads/dos.png'}}};
+    return response({data: [{...offer(String(page)), imagen_promo}], meta: {pagination: {page, pageSize: 1, pageCount: 2}}});
+  });
+  for (const url of calls) {
+    assert.equal(url.searchParams.get('populate[imagen_promo]'), 'true');
+    assert.equal(url.searchParams.get('locale'), 'es');
+    assert.equal(url.searchParams.get('status'), 'published');
+    assert.equal(url.searchParams.has('pagination[start]'), false);
+    assert.equal(url.searchParams.has('pagination[limit]'), false);
+  }
+  assert.deepEqual(result.offers.map(item => item.promoImageUrl), ['https://strapi.test/uploads/uno.png', 'https://strapi.test/uploads/dos.png']);
+});

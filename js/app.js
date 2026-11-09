@@ -72,6 +72,32 @@ function renderCategories() {
     return button;
   }));
 }
+function offerVisual(offer) {
+  const visual = element('div', 'offer-card__logo offer-card__logo--generic');
+  visual.setAttribute('aria-hidden', 'true');
+  const icon = element('span', '', ({comida: '🍽️', cine: '🎟️', ropa: '👕'})[offer.categoryKey] ?? '🎁');
+  visual.append(icon);
+  if (offer.promoImageUrl) {
+    const image = element('img', 'offer-card__image');
+    image.alt = '';
+    image.hidden = true;
+    image.addEventListener('load', () => {
+      icon.hidden = true;
+      image.hidden = false;
+      visual.classList.remove('offer-card__logo--generic');
+      visual.classList.add('offer-card__logo--promo');
+    }, {once: true});
+    image.addEventListener('error', () => {
+      image.remove();
+      icon.hidden = false;
+      visual.classList.remove('offer-card__logo--promo');
+      visual.classList.add('offer-card__logo--generic');
+    }, {once: true});
+    visual.append(image);
+    image.src = offer.promoImageUrl;
+  }
+  return visual;
+}
 function renderOffers() {
   const ready = catalogState === 'ready';
   const visible = ready ? interestStore.selectOffers(locationStore.filterOffers(offers), categoryKey) : [];
@@ -82,11 +108,10 @@ function renderOffers() {
   $('#offerList').replaceChildren(...visible.map((offer) => {
     const article = element('article', 'offer-card');
     const head = element('div', 'offer-card__head');
-    const icon = element('div', 'offer-card__logo offer-card__logo--generic', ({comida: '🍽️', cine: '🎟️', ropa: '👕'})[offer.categoryKey] ?? '🎁');
-    icon.setAttribute('aria-hidden', 'true');
+    const visual = offerVisual(offer);
     const heading = element('div', 'offer-card__heading');
     heading.append(element('h3', '', offer.name), element('p', '', offer.brand || 'Comercio no disponible'));
-    head.append(icon, heading);
+    head.append(visual, heading);
     const tags = element('div', 'tag-row');
     tags.append(element('span', 'tag', offer.category));
     if (offer.location) tags.append(element('span', 'tag tag--location', offer.location));

@@ -17,7 +17,20 @@ const mastvCatalog = (() => {
     const day = new Date(`${raw.slice(0, 10)}T00:00:00Z`);
     return Number.isFinite(date.getTime()) && Number.isFinite(day.getTime()) && day.toISOString().slice(0, 10) === raw.slice(0, 10) ? raw : null;
   }
-  function normalizeOffer(item) {
+  function promoImageUrl(value, mediaOrigin) {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return '';
+    const media = value.data ?? value;
+    if (!media || typeof media !== 'object' || Array.isArray(media)) return '';
+    const raw = text(media.attributes?.url ?? media.url);
+    if (!raw) return '';
+    try {
+      const url = new URL(raw, mediaOrigin);
+      return ['http:', 'https:'].includes(url.protocol) && !url.username && !url.password ? url.href : '';
+    } catch {
+      return '';
+    }
+  }
+  function normalizeOffer(item, mediaOrigin) {
     if (!item || typeof item !== 'object' || Array.isArray(item)) return null;
     const fields = {...item, ...(item.attributes && typeof item.attributes === 'object' && !Array.isArray(item.attributes) ? item.attributes : {})};
     const id = [fields.id_offer, fields.documentId, fields.id].map(identity).find(Boolean);
@@ -32,6 +45,7 @@ const mastvCatalog = (() => {
       documentId: fields.documentId ?? null,
       idOffer: fields.id_offer ?? null,
       brand: text(fields.establecimiento),
+      promoImageUrl: promoImageUrl(fields.imagen_promo, mediaOrigin),
       description: text(fields.descripcion),
       location: text(fields.entidad_federativa),
       discountPercentage: number(fields.descuento_porcentaje, 100),
@@ -67,6 +81,7 @@ const mastvCatalog = (() => {
     base.searchParams.delete('pagination[start]');
     base.searchParams.delete('pagination[limit]');
     base.searchParams.set('pagination[pageSize]', '100');
+    base.searchParams.set('populate[imagen_promo]', 'true');
     const rows = [];
     let pages = 1;
     for (let page = 1; page <= pages; page += 1) {
@@ -99,7 +114,7 @@ const mastvCatalog = (() => {
     let omitted = 0;
     const byId = new Map();
     rows.forEach((item) => {
-      const offer = normalizeOffer(item);
+      const offer = normalizeOffer(item, base.origin);
       if (!offer) omitted += 1;
       else if (!byId.has(offer.id)) byId.set(offer.id, offer);
     });

@@ -1,0 +1,247 @@
+{
+  "date": "2026-11-06T20:38:05.768Z",
+  "projectRoot": "/home/swumplurd/Documentos/devsarrollo/repos/tracardi-mastv",
+  "scope": "US-005 seven expanded Gherkin cases plus two focused regressions; synthetic external responses",
+  "results": [
+    {
+      "id": "01",
+      "name": "Imagen completa a 320px",
+      "status": "PASS",
+      "observed": {
+        "viewport": 320,
+        "scrollWidth": 320,
+        "cards": [
+          {
+            "title": "QA beneficio HORIZONTAL",
+            "card": {
+              "x": 7,
+              "y": 476.1875,
+              "width": 306,
+              "height": 221.5625,
+              "right": 313,
+              "bottom": 697.75
+            },
+            "image": {
+              "x": 20,
+              "y": 488.1875,
+              "width": 90,
+              "height": 80,
+              "right": 110,
+              "bottom": 568.1875
+            },
+            "natural": [
+              480,
+              120
+            ],
+            "fit": "contain",
+            "src": "http://localhost:1337/uploads/qa-horizontal.svg",
+            "alt": "",
+            "ariaHidden": "true",
+            "icon": "🍽️",
+            "iconHidden": true,
+            "promo": true,
+            "heading": {
+              "x": 119,
+              "y": 489.1875,
+              "width": 181,
+              "height": 15,
+              "right": 300,
+              "bottom": 504.1875
+            },
+            "button": {
+              "x": 20,
+              "y": 657.65625,
+              "width": 125,
+              "height": 26.09375,
+              "right": 145,
+              "bottom": 683.75
+            },
+            "buttonText": "Ver beneficio",
+            "tabIndex": 0,
+            "fontSize": "13px",
+            "paintedSize": [
+              90,
+              22.5
+            ]
+          },
+          {
+            "title": "QA beneficio VERTICAL-V4",
+            "card": {
+              "x": 7,
+              "y": 706.75,
+              "width": 306,
+              "height": 221.5625,
+              "right": 313,
+              "bottom": 928.3125
+            },
+            "image": {
+              "x": 20,
+              "y": 718.75,
+              "width": 90,
+              "height": 80,
+              "right": 110,
+              "bottom": 798.75
+            },
+            "natural": [
+              120,
+              320
+            ],
+            "fit": "contain",
+            "src": "http://localhost:1337/uploads/qa-vertical.svg",
+            "alt": "",
+            "ariaHidden": "true",
+            "icon": "🍽️",
+            "iconHidden": true,
+            "promo": true,
+            "heading": {
+              "x": 119,
+              "y": 719.75,
+              "width": 181,
+              "height": 15,
+              "right": 300,
+              "bottom": 734.75
+            },
+            "button": {
+              "x": 20,
+              "y": 888.21875,
+              "width": 125,
+              "height": 26.09375,
+              "right": 145,
+              "bottom": 914.3125
+            },
+            "buttonText": "Ver beneficio",
+            "tabIndex": 0,
+            "fontSize": "13px",
+            "paintedSize": [
+              30,
+              80
+            ]
+          }
+        ],
+        "accessibility": [
+          {
+            "role": "button",
+            "name": "Abrir menú"
+          },
+          {
+            "role": "image",
+            "name": "MASTV"
+          },
+          {
+            "role": "image",
+            "name": "Regalo con moño rojo"
+          },
+          {
+            "role": "heading",
+            "name": "Filtrar por categoría:"
+          },
+          {
+            "role": "heading",
+            "name": "Catálogo de Ofertas"
+          },
+          {
+            "role": "button",
+            "name": "Cambiar ubicación"
+          },
+          {
+            "role": "button",
+            "name": "Todos"
+          },
+          {
+            "role": "button",
+            "name": "Comida"
+          },
+          {
+            "role": "heading",
+            "name": "QA beneficio HORIZONTAL"
+          },
+          {
+            "role": "button",
+            "name": "Ver beneficio"
+          },
+          {
+            "role": "heading",
+            "name": "QA beneficio VERTICAL-V4"
+          },
+          {
+            "role": "button",
+            "name": "Ver beneficio"
+          }
+        ]
+      },
+      "calls": [],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "network": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&populate%5Bimagen_promo%5D=true&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-horizontal.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-vertical.svg",
+          "method": "GET",
+          "body": null
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "name": "Imagen completa a 480px",
+      "status": "FAIL",
+      "error": "Error: Condition timeout: !document.querySelector(\"#catalogView\").hidden\n    at Object.waitFor (file:///tmp/mastv-us005-qa/cdp.mjs:64:11)\n    at async setup (file:///tmp/mastv-us005-qa/us005.mjs:58:2)\n    at async file:///tmp/mastv-us005-qa/us005.mjs:85:107"
+    },
+    {
+      "id": "03",
+      "name": "Imagen completa a 1024px",
+      "status": "FAIL",
+      "error": "Error: Condition timeout: !document.querySelector(\"#catalogView\").hidden\n    at Object.waitFor (file:///tmp/mastv-us005-qa/cdp.mjs:64:11)\n    at async setup (file:///tmp/mastv-us005-qa/us005.mjs:58:2)\n    at async file:///tmp/mastv-us005-qa/us005.mjs:85:107"
+    },
+    {
+      "id": "04",
+      "name": "Fallback ausente",
+      "status": "FAIL",
+      "error": "Error: Condition timeout: !document.querySelector(\"#catalogView\").hidden\n    at Object.waitFor (file:///tmp/mastv-us005-qa/cdp.mjs:64:11)\n    at async setup (file:///tmp/mastv-us005-qa/us005.mjs:58:2)\n    at async file:///tmp/mastv-us005-qa/us005.mjs:85:107"
+    },
+    {
+      "id": "05",
+      "name": "Fallback vacía",
+      "status": "FAIL",
+      "error": "Error: Condition timeout: !document.querySelector(\"#catalogView\").hidden\n    at Object.waitFor (file:///tmp/mastv-us005-qa/cdp.mjs:64:11)\n    at async setup (file:///tmp/mastv-us005-qa/us005.mjs:58:2)\n    at async file:///tmp/mastv-us005-qa/us005.mjs:85:107"
+    },
+    {
+      "id": "06",
+      "name": "Fallback no disponible",
+      "status": "FAIL",
+      "error": "Error: Condition timeout: !document.querySelector(\"#catalogView\").hidden\n    at Object.waitFor (file:///tmp/mastv-us005-qa/cdp.mjs:64:11)\n    at async setup (file:///tmp/mastv-us005-qa/us005.mjs:58:2)\n    at async file:///tmp/mastv-us005-qa/us005.mjs:85:107"
+    },
+    {
+      "id": "07",
+      "name": "Abrir misma promoción con teclado Enter y Espacio",
+      "status": "FAIL",
+      "error": "Error: Condition timeout: !document.querySelector(\"#catalogView\").hidden\n    at Object.waitFor (file:///tmp/mastv-us005-qa/cdp.mjs:64:11)\n    at async setup (file:///tmp/mastv-us005-qa/us005.mjs:58:2)\n    at async file:///tmp/mastv-us005-qa/us005.mjs:85:107"
+    },
+    {
+      "id": "08",
+      "name": "Regresión recomendaciones con imágenes",
+      "status": "FAIL",
+      "error": "Error: Condition timeout: !document.querySelector(\"#catalogView\").hidden\n    at Object.waitFor (file:///tmp/mastv-us005-qa/cdp.mjs:64:11)\n    at async setup (file:///tmp/mastv-us005-qa/us005.mjs:58:2)\n    at async file:///tmp/mastv-us005-qa/us005.mjs:85:107"
+    },
+    {
+      "id": "09",
+      "name": "Regresión región y categoría con imágenes",
+      "status": "FAIL",
+      "error": "Error: Condition timeout: !document.querySelector(\"#catalogView\").hidden\n    at Object.waitFor (file:///tmp/mastv-us005-qa/cdp.mjs:64:11)\n    at async setup (file:///tmp/mastv-us005-qa/us005.mjs:58:2)\n    at async file:///tmp/mastv-us005-qa/us005.mjs:85:107"
+    }
+  ]
+}

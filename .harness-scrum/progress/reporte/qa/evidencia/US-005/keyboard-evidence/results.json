@@ -1,0 +1,683 @@
+{
+  "date": "2026-11-06T21:11:29.391Z",
+  "projectRoot": "/home/swumplurd/Documentos/devsarrollo/repos/tracardi-mastv",
+  "scope": "US-005 seven expanded Gherkin cases plus two focused regressions; synthetic external responses",
+  "results": [
+    {
+      "id": "07",
+      "name": "Abrir misma promoción con teclado Enter y Espacio",
+      "status": "PASS",
+      "observed": {
+        "activations": [
+          "Enter",
+          "Space"
+        ],
+        "detailTitle": "QA beneficio VERTICAL-V4",
+        "consultationEvents": [
+          {
+            "type": "offer-click",
+            "properties": {
+              "id": "QA-VERTICAL-V4",
+              "offer_id": "QA-VERTICAL-V4",
+              "title": "QA beneficio VERTICAL-V4",
+              "category": "Comida",
+              "store": "QA comercio sintético",
+              "entidad_federativa": null,
+              "price_original": 200,
+              "price": 170,
+              "price_offer": 170,
+              "discount_percentage": 15,
+              "coupon_code": "QA-CUPON-VERTICAL-V4",
+              "expiration_date": "2030-12-31",
+              "offer_type": "descuento",
+              "action": "offer_click"
+            }
+          },
+          {
+            "type": "offer-view",
+            "properties": {
+              "id": "QA-VERTICAL-V4",
+              "offer_id": "QA-VERTICAL-V4",
+              "title": "QA beneficio VERTICAL-V4",
+              "category": "Comida",
+              "store": "QA comercio sintético",
+              "entidad_federativa": null,
+              "price_original": 200,
+              "price": 170,
+              "price_offer": 170,
+              "discount_percentage": 15,
+              "coupon_code": "QA-CUPON-VERTICAL-V4",
+              "expiration_date": "2030-12-31",
+              "offer_type": "descuento",
+              "action": "offer_click"
+            }
+          },
+          {
+            "type": "offer-click",
+            "properties": {
+              "id": "QA-VERTICAL-V4",
+              "offer_id": "QA-VERTICAL-V4",
+              "title": "QA beneficio VERTICAL-V4",
+              "category": "Comida",
+              "store": "QA comercio sintético",
+              "entidad_federativa": null,
+              "price_original": 200,
+              "price": 170,
+              "price_offer": 170,
+              "discount_percentage": 15,
+              "coupon_code": "QA-CUPON-VERTICAL-V4",
+              "expiration_date": "2030-12-31",
+              "offer_type": "descuento",
+              "action": "offer_click"
+            }
+          },
+          {
+            "type": "offer-view",
+            "properties": {
+              "id": "QA-VERTICAL-V4",
+              "offer_id": "QA-VERTICAL-V4",
+              "title": "QA beneficio VERTICAL-V4",
+              "category": "Comida",
+              "store": "QA comercio sintético",
+              "entidad_federativa": null,
+              "price_original": 200,
+              "price": 170,
+              "price_offer": 170,
+              "discount_percentage": 15,
+              "coupon_code": "QA-CUPON-VERTICAL-V4",
+              "expiration_date": "2030-12-31",
+              "offer_type": "descuento",
+              "action": "offer_click"
+            }
+          }
+        ]
+      },
+      "calls": [
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000050"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000005"
+          },
+          "events": [
+            {
+              "type": "offer-click",
+              "properties": {
+                "id": "QA-VERTICAL-V4",
+                "offer_id": "QA-VERTICAL-V4",
+                "title": "QA beneficio VERTICAL-V4",
+                "category": "Comida",
+                "store": "QA comercio sintético",
+                "entidad_federativa": null,
+                "price_original": 200,
+                "price": 170,
+                "price_offer": 170,
+                "discount_percentage": 15,
+                "coupon_code": "QA-CUPON-VERTICAL-V4",
+                "expiration_date": "2030-12-31",
+                "offer_type": "descuento",
+                "action": "offer_click"
+              }
+            },
+            {
+              "type": "offer-view",
+              "properties": {
+                "id": "QA-VERTICAL-V4",
+                "offer_id": "QA-VERTICAL-V4",
+                "title": "QA beneficio VERTICAL-V4",
+                "category": "Comida",
+                "store": "QA comercio sintético",
+                "entidad_federativa": null,
+                "price_original": 200,
+                "price": 170,
+                "price_offer": 170,
+                "discount_percentage": 15,
+                "coupon_code": "QA-CUPON-VERTICAL-V4",
+                "expiration_date": "2030-12-31",
+                "offer_type": "descuento",
+                "action": "offer_click"
+              }
+            }
+          ]
+        },
+        {
+          "source": {
+            "id": "demo-source"
+          },
+          "session": {
+            "id": "00000000-0000-4000-8000-000000000050"
+          },
+          "profile": {
+            "id": "00000000-0000-4000-8000-000000000005"
+          },
+          "events": [
+            {
+              "type": "offer-click",
+              "properties": {
+                "id": "QA-VERTICAL-V4",
+                "offer_id": "QA-VERTICAL-V4",
+                "title": "QA beneficio VERTICAL-V4",
+                "category": "Comida",
+                "store": "QA comercio sintético",
+                "entidad_federativa": null,
+                "price_original": 200,
+                "price": 170,
+                "price_offer": 170,
+                "discount_percentage": 15,
+                "coupon_code": "QA-CUPON-VERTICAL-V4",
+                "expiration_date": "2030-12-31",
+                "offer_type": "descuento",
+                "action": "offer_click"
+              }
+            },
+            {
+              "type": "offer-view",
+              "properties": {
+                "id": "QA-VERTICAL-V4",
+                "offer_id": "QA-VERTICAL-V4",
+                "title": "QA beneficio VERTICAL-V4",
+                "category": "Comida",
+                "store": "QA comercio sintético",
+                "entidad_federativa": null,
+                "price_original": 200,
+                "price": 170,
+                "price_offer": 170,
+                "discount_percentage": 15,
+                "coupon_code": "QA-CUPON-VERTICAL-V4",
+                "expiration_date": "2030-12-31",
+                "offer_type": "descuento",
+                "action": "offer_click"
+              }
+            }
+          ]
+        }
+      ],
+      "uncaughtErrors": [],
+      "consoleErrors": [],
+      "keyboardEvents": [
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BODY",
+          "classes": "",
+          "text": "\n  \n    \n      \n      \n      InicioCatálogo de ofertas\n    \n\n    \n      \n       "
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "A",
+          "classes": "brand",
+          "text": ""
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "A",
+          "classes": "brand",
+          "text": ""
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "menu-toggle",
+          "text": ""
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "menu-toggle",
+          "text": ""
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "outline-button change-location",
+          "text": "Cambiar ubicación"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "outline-button change-location",
+          "text": "Cambiar ubicación"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "A",
+          "classes": "",
+          "text": "Nominatim"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "A",
+          "classes": "",
+          "text": "Nominatim"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "A",
+          "classes": "",
+          "text": "colaboradores de OpenStreetMap"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "A",
+          "classes": "",
+          "text": "colaboradores de OpenStreetMap"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "filter is-active",
+          "text": "Todos"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "filter is-active",
+          "text": "Todos"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "filter",
+          "text": "Comida"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "filter",
+          "text": "Comida"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "keydown",
+          "key": "Enter",
+          "code": "Enter",
+          "keyCode": 13,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "keypress",
+          "key": "Enter",
+          "code": "Enter",
+          "keyCode": 13,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "click",
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "keyup",
+          "key": "Enter",
+          "code": "Enter",
+          "keyCode": 13,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "click",
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "back-pill",
+          "text": "← Volver al Catálogo de ofertas"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "back-pill",
+          "text": "← Volver al Catálogo de ofertas"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "A",
+          "classes": "brand",
+          "text": ""
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "A",
+          "classes": "brand",
+          "text": ""
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "menu-toggle",
+          "text": ""
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "menu-toggle",
+          "text": ""
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "outline-button change-location",
+          "text": "Cambiar ubicación"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "outline-button change-location",
+          "text": "Cambiar ubicación"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "A",
+          "classes": "",
+          "text": "Nominatim"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "A",
+          "classes": "",
+          "text": "Nominatim"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "A",
+          "classes": "",
+          "text": "colaboradores de OpenStreetMap"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "A",
+          "classes": "",
+          "text": "colaboradores de OpenStreetMap"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "filter is-active",
+          "text": "Todos"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "filter is-active",
+          "text": "Todos"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "filter",
+          "text": "Comida"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "filter",
+          "text": "Comida"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "keydown",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "keyup",
+          "key": "Tab",
+          "code": "Tab",
+          "keyCode": 9,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "keydown",
+          "key": " ",
+          "code": "Space",
+          "keyCode": 32,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "keypress",
+          "key": " ",
+          "code": "Space",
+          "keyCode": 32,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "keyup",
+          "key": " ",
+          "code": "Space",
+          "keyCode": 32,
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        },
+        {
+          "type": "click",
+          "isTrusted": true,
+          "tag": "BUTTON",
+          "classes": "offer-card__button",
+          "text": "Ver beneficio"
+        }
+      ],
+      "network": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/api/offers?pagination%5BpageSize%5D=100&populate%5Bimagen_promo%5D=true&pagination%5Bpage%5D=1",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-horizontal.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:1337/uploads/qa-vertical.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "OPTIONS",
+          "body": null
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "POST",
+          "body": "{\"source\":{\"id\":\"demo-source\"},\"session\":{\"id\":\"00000000-0000-4000-8000-000000000050\"},\"profile\":{\"id\":\"00000000-0000-4000-8000-000000000005\"},\"events\":[{\"type\":\"offer-click\",\"properties\":{\"id\":\"QA-VERTICAL-V4\",\"offer_id\":\"QA-VERTICAL-V4\",\"title\":\"QA beneficio VERTICAL-V4\",\"category\":\"Comida\",\"store\":\"QA comercio sintético\",\"entidad_federativa\":null,\"price_original\":200,\"price\":170,\"price_offer\":170,\"discount_percentage\":15,\"coupon_code\":\"QA-CUPON-VERTICAL-V4\",\"expiration_date\":\"2030-12-31\",\"offer_type\":\"descuento\",\"action\":\"offer_click\"}},{\"type\":\"offer-view\",\"properties\":{\"id\":\"QA-VERTICAL-V4\",\"offer_id\":\"QA-VERTICAL-V4\",\"title\":\"QA beneficio VERTICAL-V4\",\"category\":\"Comida\",\"store\":\"QA comercio sintético\",\"entidad_federativa\":null,\"price_original\":200,\"price\":170,\"price_offer\":170,\"discount_percentage\":15,\"coupon_code\":\"QA-CUPON-VERTICAL-V4\",\"expiration_date\":\"2030-12-31\",\"offer_type\":\"descuento\",\"action\":\"offer_click\"}}]}"
+        },
+        {
+          "url": "http://localhost:8686/track",
+          "method": "POST",
+          "body": "{\"source\":{\"id\":\"demo-source\"},\"session\":{\"id\":\"00000000-0000-4000-8000-000000000050\"},\"profile\":{\"id\":\"00000000-0000-4000-8000-000000000005\"},\"events\":[{\"type\":\"offer-click\",\"properties\":{\"id\":\"QA-VERTICAL-V4\",\"offer_id\":\"QA-VERTICAL-V4\",\"title\":\"QA beneficio VERTICAL-V4\",\"category\":\"Comida\",\"store\":\"QA comercio sintético\",\"entidad_federativa\":null,\"price_original\":200,\"price\":170,\"price_offer\":170,\"discount_percentage\":15,\"coupon_code\":\"QA-CUPON-VERTICAL-V4\",\"expiration_date\":\"2030-12-31\",\"offer_type\":\"descuento\",\"action\":\"offer_click\"}},{\"type\":\"offer-view\",\"properties\":{\"id\":\"QA-VERTICAL-V4\",\"offer_id\":\"QA-VERTICAL-V4\",\"title\":\"QA beneficio VERTICAL-V4\",\"category\":\"Comida\",\"store\":\"QA comercio sintético\",\"entidad_federativa\":null,\"price_original\":200,\"price\":170,\"price_offer\":170,\"discount_percentage\":15,\"coupon_code\":\"QA-CUPON-VERTICAL-V4\",\"expiration_date\":\"2030-12-31\",\"offer_type\":\"descuento\",\"action\":\"offer_click\"}}]}"
+        }
+      ]
+    }
+  ]
+}
